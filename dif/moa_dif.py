@@ -20,6 +20,7 @@ alma = mu.read_json("ALMA_moa_extracted.json")
 #to title_fuzz_output.txt. We can review that doc to assess the success of the fuzzy apporach.
 title_fuzz_file = open("title_fuzz_output.txt", 'w')
 for key in keys:
+    print(key)
     #-verify match via keys
     if str(key[2]) in [marc_record["id"] for marc_record in marc] and key[0] in [alma_record["id"] for alma_record in alma]:
         for marc_record in marc:

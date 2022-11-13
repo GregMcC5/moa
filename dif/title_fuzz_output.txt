@@ -551,6 +551,10 @@ fuzz score: 100
 marc title: The Tribune tracts.
 alma title: The Tribune tracts.
 
+fuzz score: 100
+marc title: Annual report of the Commissioner of Indian Affairs to the Secretary of the Interior
+alma title: Annual report of the Commissioner of Indian Affairs to the Secretary of the Interior.
+
 fuzz score: 99
 marc title: Statistics of mines and mining in the states and territories west of the Rocky Mountains ; being the [1st-8th] annual report of Rossiter W. Raymond, U.S. commissioner of mining statistics.
 alma title: Statistics of mines and mining in the states and territories west of the Rocky Mountains; being the [1st-8th] annual report of Rossiter W. Raymond, U.S. commissioner of mining statistics.
@@ -12220,6 +12224,10 @@ marc title: The Babylonian Expedition of the University of Pennsylvania.
 alma title: The Babylonian Expedition of the University of Pennsylvania. Series D. Researches and treatises.
 
 fuzz score: 100
+marc title: Smithsonian contributions to knowledge.
+alma title: Smithsonian contributions to knowledge.
+
+fuzz score: 100
 marc title: Memoirs read before the Boston Society of Natural History.
 alma title: Memoirs read before the Boston Society of Natural History.
 
@@ -15051,6 +15059,10 @@ fuzz score: 100
 marc title: The iron furnace: or, Slavery and secession.
 alma title: The iron furnace: or, Slavery and secession. By Rev. John H. Aughey, a refugee from Mississippi.
 
+fuzz score: 100
+marc title: Principles of the economic philosophy of society, government, and industry, by Van Buren Denslow, LL.D
+alma title: Principles of the economic philosophy of society, government, and industry, by Van Buren Denslow, LL.D.
+
 fuzz score: 98
 marc title: The uprising of a great people. : the United States in 1861. To which is added A word of peace on the difference between England and the United States. /
 alma title: The uprising of a great people. the United States in 1861. To which is added A word of peace on the difference between England and the United States. From the French of Count Agénor de Gasparin. By Mary L. Booth.
@@ -16055,6 +16067,10 @@ fuzz score: 97
 marc title: Report upon the Colorado River of the West, explored in 1857 and 1858/
 alma title: Report upon the Colorado River of the West,:  explored in 1857 and 1858/ by Joseph C. Ives.
 
+fuzz score: 100
+marc title: Washington observations
+alma title: Washington observations.
+
 fuzz score: 97
 marc title: The history of the Peloponnesian war /
 alma title: The history of the Peloponnesian war, by Thucydides. By John J. Owen.
@@ -16510,6 +16526,10 @@ alma title: Behind the scenes in candy factories.
 fuzz score: 95
 marc title: The new West. : Its Outletes to the ocean.
 alma title: The new West. Its Outletes to the ocean.
+
+fuzz score: 100
+marc title: Report on the transportation route along the Wisconsin and Fox rivers, in the state of Wisconsin, between the Mississippi river and lake Michigan
+alma title: Report on the transportation route along the Wisconsin and Fox rivers, in the state of Wisconsin, between the Mississippi river and lake Michigan.
 
 fuzz score: 100
 marc title: Proceedings of the Congressional convention, held in the city of St. Louis, on 13th, 14th and 15th days of May, 1873.
@@ -17694,6 +17714,14 @@ alma title: Reports on the geological survey of the state of Missouri. 1855-1871
 fuzz score: 100
 marc title: Report of the Geological survey of the state of Missouri, including field work of 1873-1874 ...
 alma title: Report of the Geological survey of the state of Missouri, including field work of 1873-1874 ...
+
+fuzz score: 100
+marc title: Geology of New Jersey
+alma title: Geology of New Jersey.
+
+fuzz score: 100
+marc title: Geology of the county of Cape May, state of New Jersey
+alma title: Geology of the county of Cape May, state of New Jersey.
 
 fuzz score: 100
 marc title: Report of the exploring expedition from Santa Fé, New Mexico, to the junction of the Grand and Green Rivers of the great Colorado of the West, in 1859 under the command of Capt. J.N. Macomb.
@@ -24940,6 +24968,10 @@ marc title: Address before the American association for the advancement of scien
 alma title: Address before the American association for the advancement of science,
 
 fuzz score: 100
+marc title: Elements of astronomy ...
+alma title: Elements of astronomy ...
+
+fuzz score: 100
 marc title: Lecture on the great unfinished problems of the universe.
 alma title: Lecture on the great unfinished problems of the universe.
 
@@ -25971,6 +26003,10 @@ fuzz score: 99
 marc title: Report on the geological and agricultural survey of the state of Mississippi /
 alma title: Report on the geological and agricultural survey of the state of Mississippi. By Eugene W. Hilgard, state geologist.
 
+fuzz score: 100
+marc title: Report on the geology and agriculture of the state of Mississippi: by Eug. W. Hilgard, PH. D., state geologist. Printed by order of the legislature
+alma title: Report on the geology and agriculture of the state of Mississippi: by Eug. W. Hilgard, PH. D., state geologist. Printed by order of the legislature.
+
 fuzz score: 99
 marc title: The San Juan mines : a compendium of the mineral resources of southwestern Colorado, together with a description of its mountain scenery ... including the mining laws of Colorado and the acts of Congress relating thereto.
 alma title: The San Juan mines; a compendium of the mineral resources of southwestern Colorado, together with a description of its mountain scenery ... including the mining laws of Colorado and the acts of Congress relating thereto.
@@ -26130,6 +26166,10 @@ alma title: Report, articles of association and by-laws of the Clifton mining co
 fuzz score: 100
 marc title: Statement concerning the Devon mines of Lake Superior.
 alma title: Statement concerning the Devon mines of Lake Superior.
+
+fuzz score: 100
+marc title: Articles of association and by-laws of the Shelden mining co. of Lake Superior
+alma title: Articles of association and by-laws of the Shelden mining co. of Lake Superior.
 
 fuzz score: 100
 marc title: Report of the directors and mine agent of the Star copper company, with letters from Wn. H. Stevens and A. C. Davis, esqs.
@@ -27918,6 +27958,10 @@ alma title: List of post offices in the United States ..:
 fuzz score: 100
 marc title: List of post offices in the United States ..
 alma title: List of post offices in the United States ..: 
+
+fuzz score: 100
+marc title: The Riverside magazine for young people
+alma title: The Riverside magazine for young people.
 
 fuzz score: 100
 marc title: Journals of general conventions of the Protestant Episcopal church, in the United States, 1785-1835.
@@ -36676,6 +36720,10 @@ marc title: Discussion and analysis of Professor Coffin's tables and charts of t
 alma title: Discussion and analysis of Professor Coffin's tables and charts of the Winds of the globe. By Dr. Alexander J. Woeikof ...
 
 fuzz score: 100
+marc title: On certain storms in Europe and America, December 1836. By Elias Loomis ...
+alma title: On certain storms in Europe and America, December 1836. By Elias Loomis ...
+
+fuzz score: 100
 marc title: The depths of the sea. An account of the general results of the dredging cruises of H. M. SS. 'Porcupine' and 'Lighting' during the summers of 1868, 1869, and 1870, under the scientific direction of Dr. Carpenter, F. R. S., J. Gwyn Jeffreys, F. R. S., and Dr. Wyville Thomson, F. R. S.
 alma title: The depths of the sea. An account of the general results of the dredging cruises of H. M. SS. 'Porcupine' and 'Lighting' during the summers of 1868, 1869, and 1870, under the scientific direction of Dr. Carpenter, F. R. S., J. Gwyn Jeffreys, F. R. S., and Dr. Wyville Thomson, F. R. S. By C. Wyville Thomson ...
 
@@ -36870,6 +36918,10 @@ alma title: Improvements of New York harbor, 1885 to 1891. Compliments of Joseph
 fuzz score: 99
 marc title: Des Moines and Rock River rapids, in the Mississippi River. : Letter from the Secretary of war, transmitting the inspection report of Colonel S. H. Long, and the report of Lieutenant Warren of his operations during the past year on the Des Moines and Rock River rapids, in the Mississippi River.
 alma title: Des Moines and Rock River rapids, in the Mississippi River. Letter from the Secretary of war, transmitting the inspection report of Colonel S. H. Long, and the report of Lieutenant Warren of his operations during the past year on the Des Moines and Rock River rapids, in the Mississippi River.
+
+fuzz score: 100
+marc title: Theory of the strength of materials, illustrated by applications to machines and buildings ...
+alma title: Theory of the strength of materials, illustrated by applications to machines and buildings ...
 
 fuzz score: 100
 marc title: Report of the Hon. Mark D. Wilber, chairman ... on the Detroit park bill, March 5, 1873.
@@ -39372,6 +39424,10 @@ marc title: A missionary among cannibals : or, the life of John Hunt who was emi
 alma title: A missionary among cannibals : or, the life of John Hunt who was eminently successful in converting the people of Fiji from cannibalism to Christianity / by George Stringer Rowe.
 
 fuzz score: 100
+marc title: American nationalism as expressing the rational purpose in government : being a declaration of the principles of the American Nationalist Party / by Ingram Hughes
+alma title: American nationalism as expressing the rational purpose in government : being a declaration of the principles of the American Nationalist Party / by Ingram Hughes.
+
+fuzz score: 100
 marc title: Does protection protect? An examination of the effect of different forms of tariff upon American industry.
 alma title: Does protection protect? An examination of the effect of different forms of tariff upon American industry.
 
@@ -39494,6 +39550,10 @@ alma title: Panama in 1855. An account of the Panama rail-road, of the cities of
 fuzz score: 100
 marc title: Communication from the secretary of the Treasury, transmitting, in compliance with a resolution of the Senate of March 8, 1851, the report of Israel D. Andrews ... on the trade and commerce of the British North American colonies, and upon the trade of the Great lakes and rivers; also, notices of the internal improvements in each state, of the gulf of Mexico and straits of Florida, and a paper on the cotton crop of the United States.
 alma title: Communication from the secretary of the Treasury, transmitting, in compliance with a resolution of the Senate of March 8, 1851, the report of Israel D. Andrews ... on the trade and commerce of the British North American colonies, and upon the trade of the Great lakes and rivers; also, notices of the internal improvements in each state, of the gulf of Mexico and straits of Florida, and a paper on the cotton crop of the United States.
+
+fuzz score: 100
+marc title: Culture and history in Eastern Europe / Dennis P. Hupchick
+alma title: Culture and history in Eastern Europe / Dennis P. Hupchick.
 
 fuzz score: 100
 marc title: The Sabbath hymn book: for the service of song in the house of the Lord.
