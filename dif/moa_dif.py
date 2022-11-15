@@ -47,6 +47,7 @@ title_fuzz_file.close
 passed = []
 investigate = []
 strict_title_pass_counter = 0
+year_pass_counter = 0
 
 for key in keys:
     #-verify match via keys and access
@@ -61,12 +62,22 @@ for key in keys:
                             investigate.append([val for val in marc_record.values()])
                         else:
                             strict_title_pass_counter += 1
+
                         #-year check
-print(f"{strict_title_pass_counter} out of {len(keys)} passed the initial the title test")
+                        if alma_record["pub_date"].strip() != marc_record['pub_date'].strip():
+                            print(alma_record["pub_date"], marc_record['pub_date'])
+                            investigate.append([val for val in marc_record.values()])
+                        else:
+                            year_pass_counter += 1
+
+
+print(f"{strict_title_pass_counter} out of {len(keys)} passed the initial scrict title test")
 print(f"{len(fuzz_pass)} out of {len(keys)} passed the initial fuzz test")
 
+print(f"{year_pass_counter} pased the year test")
+
 #output:
-#2216 out of 9981 passed the initial the title test
+#2216 out of 9981 passed the initial strict title test
 #9922 out of 9981 passed the initial fuzz test
 
 print("done")
