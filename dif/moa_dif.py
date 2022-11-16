@@ -79,6 +79,6 @@ print(f"{year_pass_counter} passed the year test")
 #output:
 #2216 out of 9981 passed the initial strict title test
 #9922 out of 9981 passed the initial fuzz test
-#3 pased the year test
+#3 pased the year test <--- I'm realizing that something odd is going on with the ALMA dates, (they're all from the mid-2000s) taking a look at this and will report.
 
 print("done")
