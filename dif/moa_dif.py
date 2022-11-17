@@ -1,8 +1,7 @@
 import metadata_utils as mu
 from fuzzywuzzy import fuzz
 
-#Curtis, if you're running this script locally, you may need to get the fuzzywuzzy library for it to successfully run;
-#here's the documentation on it here: https://pypi.org/project/fuzzywuzzy/; you should just be able to 'pip install fuzzywuzzy' with it on the command line
+
 
 keys = mu.read_csv("id_key_test.csv")
 marc = mu.read_json("MARC_moa_extracted.json")
