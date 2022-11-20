@@ -39,7 +39,7 @@ for key in keys:
                         if fuzz_score > THRESHOLD:
                             fuzz_pass.append(val for val in marc_record.values())
                         #-year_test
-                        if alma_record["pub_date"].strip() != marc_record['pub_date'].strip():
+                        if alma_record["pub_date"].strip("[").strip["]"] != marc_record['pub_date'].strip():
                             investigate.append([val for val in marc_record.values()])
 
 title_fuzz_file.close
