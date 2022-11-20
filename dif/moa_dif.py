@@ -19,8 +19,10 @@ alma = mu.read_json("ALMA_moa_extracted.json")
 #gets fuzzy score between correspnoding DLXS and ALMA titles, and prints them (w/ score)
 #to title_fuzz_output.txt. We can review that doc to assess the success of the fuzzy apporach.
 
-THRESHOLD = 75 #<--subject to discussion/debate/reconsideration
+THRESHOLD = 90 #<--subject to discussion/debate/reconsideration
 fuzz_pass = []
+passed = []
+investigate = []
 
 title_fuzz_file = open("title_fuzz_output.txt", 'w')
 for key in keys:
@@ -36,41 +38,34 @@ for key in keys:
                         print(f"\nfuzz score: {fuzz_score}\nmarc {'title'}: {marc_record['title']}\nalma {'title'}: {alma_record['title']}", file=title_fuzz_file)
                         if fuzz_score > THRESHOLD:
                             fuzz_pass.append(val for val in marc_record.values())
+                        #-year_test
+                        if alma_record["pub_date"].strip() != marc_record['pub_date'].strip():
+                            investigate.append([val for val in marc_record.values()])
 
 title_fuzz_file.close
 
-#--------------------------------
+#-------No Longer in Use---------
 #--strict (non-fuzzy) filtering--
 #--------------------------------
 #sort on basis of title matching,year matching, dumping into either of the two groups below
-passed = []
-investigate = []
-strict_title_pass_counter = 0
-year_pass_counter = 0
-
-for key in keys:
-    #-verify match via keys and access
-    if str(key[2]) in [marc_record["id"] for marc_record in marc] and key[0] in [alma_record["id"] for alma_record in alma]:
-        for marc_record in marc:
-            if str(marc_record["id"]) == str(key[2]):
-                for alma_record in alma:
-                    if str(alma_record["id"]) == str(key[0]):
-                        #-title check
-                        #-ALMA titles are looking like they tend to be shorter, so I'm doing 'in' tests, checking with ALMA title in MARC title
-                        if alma_record["title"].strip().lower() not in marc_record["title"].strip().lower():
-                            investigate.append([val for val in marc_record.values()])
-                        else:
-                            strict_title_pass_counter += 1
-
-                        #-year check
-                        if alma_record["pub_date"].strip() != marc_record['pub_date'].strip():
-                            print(alma_record["pub_date"], marc_record['pub_date'])
-                            investigate.append([val for val in marc_record.values()])
-                        else:
-                            year_pass_counter += 1
 
 
-print(f"{strict_title_pass_counter} out of {len(keys)} passed the initial scrict title test")
+# for key in keys:
+#     #-verify match via keys and access
+#     if str(key[2]) in [marc_record["id"] for marc_record in marc] and key[0] in [alma_record["id"] for alma_record in alma]:
+#         for marc_record in marc:
+#             if str(marc_record["id"]) == str(key[2]):
+#                 for alma_record in alma:
+#                     if str(alma_record["id"]) == str(key[0]):
+#                         #-title check
+#                         #-ALMA titles are looking like they tend to be shorter, so I'm doing 'in' tests, checking with ALMA title in MARC title
+#                         if alma_record["title"].strip().lower() not in marc_record["title"].strip().lower():
+#                             investigate.append([val for val in marc_record.values()])
+#                         else:
+#                             strict_title_pass_counter += 1
+
+
+# print(f"{strict_title_pass_counter} out of {len(keys)} passed the initial scrict title test")
 print(f"{len(fuzz_pass)} out of {len(keys)} passed the initial fuzz test")
 
 print(f"{year_pass_counter} passed the year test")
