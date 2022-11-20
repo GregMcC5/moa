@@ -68,7 +68,7 @@ title_fuzz_file.close
 # print(f"{strict_title_pass_counter} out of {len(keys)} passed the initial scrict title test")
 print(f"{len(fuzz_pass)} out of {len(keys)} passed the initial fuzz test")
 
-print(f"{year_pass_counter} passed the year test")
+#print(f"{year_pass_counter} passed the year test")
 
 #output:
 #2216 out of 9981 passed the initial strict title test
