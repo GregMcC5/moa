@@ -44,14 +44,15 @@ for key in keys:
                 for alma_record in alma:
                     if str(alma_record["id"]) == str(key[0]):
                         #-got both matches, ready for tests/filtering
-                        #-write fuzz score w/ title
+
+                        #--FUZZ Test
                         fuzz_score = None
                         fuzz_score = fuzz.partial_ratio(marc_record["title"], alma_record["title"])
                         print(f"\nfuzz score: {fuzz_score}\ndlxs {'title'}: {marc_record['title']}\nalma {'title'}: {alma_record['title']}", file=title_fuzz_file)
                         if fuzz_score < THRESHOLD:
                             investigate.append({"dlxs_id" : marc_record["id"], "alma_id" : alma_record["id"], "issues" : ["title"], "dlxs_title" : marc_record["title"], "alma_title" : alma_record["title"], "fuzz_score" : fuzz_score})
-                        #-year_test
-                        if alma_record["pub_date"] != None and marc_record["pub_date"] != None and alma_record["pub_date"].strip("[").strip("]").strip(".").strip(",") != marc_record['pub_date'].strip("[").strip("]").strip(".").strip(","):
+                        #-Year (matching) Test
+                        if alma_record["pub_date"] != None and marc_record["pub_date"] != None and alma_record["pub_date"].strip("[").strip("]").strip(".").strip(",").strip("?") != marc_record['pub_date'].strip("[").strip("]").strip(".").strip(",").strip("?"):
                             if marc_record["id"] + alma_record["id"] in [record["dlxs_id"] + record["alma_id"] for record in investigate if "dlxs_id" in record.keys() and "alma_id" in record.keys()]:
                                 for record in investigate:
                                     if "dlxs_id" in record.keys() and "alma_id" in record.keys() and marc_record["id"] + alma_record["id"] == record["dlxs_id"] + record["alma_id"]:
@@ -60,7 +61,8 @@ for key in keys:
                                         record["issues"].append("date")
                             else:
                                 investigate.append({"dlxs_id":marc_record["id"], "alma_id" : alma_record["id"],"dlxs_date" : marc_record["pub_date"], "alma_date" : alma_record["pub_date"], "issues" : ["date"]})
-                        #-language test
+                        #-Language Test
+                        #if none
                         if alma_record["language"] is None or marc_record["language"] is None:
                             if marc_record["id"] + alma_record["id"] in [record["dlxs_id"] + record["alma_id"] for record in investigate if "dlxs_id" in record.keys() and "alma_id" in record.keys()]:
                                 for record in investigate:
@@ -70,6 +72,7 @@ for key in keys:
                                         record["issues"].append("language")
                             else:
                                 investigate.append({"dlxs_id":marc_record["id"], "alma_id" : alma_record["id"], "dlxs_language" : marc_record["language"], "alma_language" : alma_record["language"], "issues" : ["language"]})
+                        #matching test
                         elif alma_record["language"].lower() not in ("eng", "English") or marc_record["language"].lower() not in ("eng", "English"):
                             if marc_record["id"] + alma_record["id"] in [record["dlxs_id"] + record["alma_id"] for record in investigate if "dlxs_id" in record.keys() and "alma_id" in record.keys()]:
                                 for record in investigate:
@@ -118,8 +121,8 @@ title_fuzz_file.close
     #updated the ALMA content with more correct ALMA pub_date data; should be good now!
 
 
-mu.write_json("passed.csv", passed)
-mu.write_json("investigate.csv", investigate)
+mu.write_json("passed.json", passed)
+mu.write_json("investigate.json", investigate)
 
 
 print("done")

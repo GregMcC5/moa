@@ -1,0 +1,5 @@
+A regular expression to use with the investigate.json and see if a particular thing is in the "issues" field:
+
+"issues": \[\n      ("date"|.*\n      "date")
+
+replace date with "language" or "title"
