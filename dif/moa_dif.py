@@ -43,6 +43,7 @@ for key in keys:
             if str(marc_record["id"]) == str(key[2]):
                 for alma_record in alma:
                     if str(alma_record["id"]) == str(key[0]):
+                        #-got both matches, ready for tests/filtering
                         #-write fuzz score w/ title
                         fuzz_score = None
                         fuzz_score = fuzz.partial_ratio(marc_record["title"], alma_record["title"])
@@ -50,15 +51,38 @@ for key in keys:
                         if fuzz_score < THRESHOLD:
                             investigate.append({"dlxs_id" : marc_record["id"], "alma_id" : alma_record["id"], "issues" : ["title"], "dlxs_title" : marc_record["title"], "alma_title" : alma_record["title"], "fuzz_score" : fuzz_score})
                         #-year_test
-                        if alma_record["pub_date"].strip("[").strip["]"] != marc_record['pub_date'].strip():
-                            if marc_record["id"] + alma_record["id"] in [record["dlxs_id"] + record["alma_id"] for record in investigate]:
+                        if alma_record["pub_date"] != None and marc_record["pub_date"] != None and alma_record["pub_date"].strip("[").strip("]").strip(".").strip(",") != marc_record['pub_date'].strip("[").strip("]").strip(".").strip(","):
+                            if marc_record["id"] + alma_record["id"] in [record["dlxs_id"] + record["alma_id"] for record in investigate if "dlxs_id" in record.keys() and "alma_id" in record.keys()]:
                                 for record in investigate:
-                                    if marc_record["id"] + alma_record["id"] == record["dlxs_id"] + record["alma_id"]:
+                                    if "dlxs_id" in record.keys() and "alma_id" in record.keys() and marc_record["id"] + alma_record["id"] == record["dlxs_id"] + record["alma_id"]:
                                         record["dlxs_date"] = marc_record["pub_date"]
                                         record["alma_date"] = alma_record["pub_date"]
                                         record["issues"].append("date")
                             else:
-                                investigate.append({"dlxs_date" : marc_record["pub_date"], "alma_date" : alma_record["pub_date"], "issues" : ["date"]})
+                                investigate.append({"dlxs_id":marc_record["id"], "alma_id" : alma_record["id"],"dlxs_date" : marc_record["pub_date"], "alma_date" : alma_record["pub_date"], "issues" : ["date"]})
+                        #-language test
+                        if alma_record["language"] is None or marc_record["language"] is None:
+                            if marc_record["id"] + alma_record["id"] in [record["dlxs_id"] + record["alma_id"] for record in investigate if "dlxs_id" in record.keys() and "alma_id" in record.keys()]:
+                                for record in investigate:
+                                    if "dlxs_id" in record.keys() and "alma_id" in record.keys() and marc_record["id"] + alma_record["id"] == record["dlxs_id"] + record["alma_id"]:
+                                        record["dlxs_langugae"] = marc_record["language"]
+                                        record["alma_language"] = alma_record["language"]
+                                        record["issues"].append("language")
+                            else:
+                                investigate.append({"dlxs_id":marc_record["id"], "alma_id" : alma_record["id"], "dlxs_language" : marc_record["language"], "alma_language" : alma_record["language"], "issues" : ["language"]})
+                        elif alma_record["language"].lower() not in ("eng", "English") or marc_record["language"].lower() not in ("eng", "English"):
+                            if marc_record["id"] + alma_record["id"] in [record["dlxs_id"] + record["alma_id"] for record in investigate if "dlxs_id" in record.keys() and "alma_id" in record.keys()]:
+                                for record in investigate:
+                                    if "dlxs_id" in record.keys() and "alma_id" in record.keys() and marc_record["id"] + alma_record["id"] == record["dlxs_id"] + record["alma_id"]:
+                                        record["dlxs_langugae"] = marc_record["language"]
+                                        record["alma_language"] = alma_record["language"]
+                                        record["issues"].append("language")
+                            else:
+                                investigate.append({"dlxs_id":marc_record["id"], "alma_id" : alma_record["id"],"dlxs_language" : marc_record["language"], "alma_language" : alma_record["language"], "issues" : ["language"]})
+                        if marc_record["id"] + alma_record["id"] not in [record["dlxs_id"] + record["alma_id"] for record in investigate if "dlxs_id" in record.keys() and "alma_id" in record.keys()]:
+                            passed.append(fold_records(dlxs_record=marc_record, alma_record=alma_record))
+
+
 
 title_fuzz_file.close
 
@@ -84,7 +108,6 @@ title_fuzz_file.close
 
 
 # print(f"{strict_title_pass_counter} out of {len(keys)} passed the initial scrict title test")
-print(f"{len(fuzz_pass)} out of {len(keys)} passed the initial fuzz test")
 
 #print(f"{year_pass_counter} passed the year test")
 
@@ -93,4 +116,10 @@ print(f"{len(fuzz_pass)} out of {len(keys)} passed the initial fuzz test")
 #9922 out of 9981 passed the initial fuzz test
 #3 pased the year test <--- I'm realizing that something odd is going on with the ALMA dates, (they're all from the mid-2000s) taking a look at this and will report.
     #updated the ALMA content with more correct ALMA pub_date data; should be good now!
+
+
+mu.write_json("passed.csv", passed)
+mu.write_json("investigate.csv", investigate)
+
+
 print("done")
