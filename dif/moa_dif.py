@@ -1,7 +1,17 @@
 import metadata_utils as mu
 from fuzzywuzzy import fuzz
 
+def fold_records(dlxs_record, alma_record):
+    '''
+    consolidates two passed records into one, filling in missing or NULL
+    info from one with that from the other
+    '''
+    nones = (None, "None")
 
+    folded_record = {key : (alma_record[key] if alma_record[key] not in nones else dlxs_record[key]) for key in alma_record.keys()}
+    folded_record["id"] = [dlxs_record["id"], alma_record["id"]]
+
+    return folded_record
 
 keys = mu.read_csv("id_key_test.csv")
 marc = mu.read_json("MARC_moa_extracted.json")
@@ -34,13 +44,21 @@ for key in keys:
                 for alma_record in alma:
                     if str(alma_record["id"]) == str(key[0]):
                         #-write fuzz score w/ title
+                        fuzz_score = None
                         fuzz_score = fuzz.partial_ratio(marc_record["title"], alma_record["title"])
-                        print(f"\nfuzz score: {fuzz_score}\nmarc {'title'}: {marc_record['title']}\nalma {'title'}: {alma_record['title']}", file=title_fuzz_file)
-                        if fuzz_score > THRESHOLD:
-                            fuzz_pass.append(val for val in marc_record.values())
+                        print(f"\nfuzz score: {fuzz_score}\ndlxs {'title'}: {marc_record['title']}\nalma {'title'}: {alma_record['title']}", file=title_fuzz_file)
+                        if fuzz_score < THRESHOLD:
+                            investigate.append({"dlxs_id" : marc_record["id"], "alma_id" : alma_record["id"], "issues" : ["title"], "dlxs_title" : marc_record["title"], "alma_title" : alma_record["title"], "fuzz_score" : fuzz_score})
                         #-year_test
                         if alma_record["pub_date"].strip("[").strip["]"] != marc_record['pub_date'].strip():
-                            investigate.append([val for val in marc_record.values()])
+                            if marc_record["id"] + alma_record["id"] in [record["dlxs_id"] + record["alma_id"] for record in investigate]:
+                                for record in investigate:
+                                    if marc_record["id"] + alma_record["id"] == record["dlxs_id"] + record["alma_id"]:
+                                        record["dlxs_date"] = marc_record["pub_date"]
+                                        record["alma_date"] = alma_record["pub_date"]
+                                        record["issues"].append("date")
+                            else:
+                                investigate.append({"dlxs_date" : marc_record["pub_date"], "alma_date" : alma_record["pub_date"], "issues" : ["date"]})
 
 title_fuzz_file.close
 
