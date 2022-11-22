@@ -22,6 +22,7 @@ dlxs = mu.read_json("dlxs_moa_extracted.json")
 #   -filter  post-1930(1925?) records
 #   -filter non-english items
 #   -output: CSV of items that passed, CSV of items that "failed"/need manual investigation
+#   -check if ALMA records lack info
 
 #-------------------
 #--title fuzz test--
@@ -32,6 +33,8 @@ dlxs = mu.read_json("dlxs_moa_extracted.json")
 THRESHOLD = 90 #<--subject to discussion/debate/reconsideration
 fuzz_pass = []
 passed = []
+headers = ["alma_id", "dlxs_id", "creator", "title", "pub_date", "pub_place", "language"]
+passed_csv = [[headers]]
 investigate = []
 
 missing_dlxs = [record for record in dlxs if record["id"] not in [x[0] for x in keys[1:]]]
@@ -87,6 +90,7 @@ for key in keys:
                                 investigate.append({"alma_id":alma_record["id"], "dlxs_id" : dlxs_record["id"],"alma_language" : alma_record["language"], "dlxs_language" : dlxs_record["language"], "issues" : ["language"]})
                         if alma_record["id"] + dlxs_record["id"] not in [record["alma_id"] + record["dlxs_id"] for record in investigate if "alma_id" in record.keys() and "dlxs_id" in record.keys()]:
                             passed.append(fold_records(alma_record=alma_record, dlxs_record=dlxs_record))
+                            passed_csv.append([alma_record["id"], dlxs_record["id"]] + [fold_records(alma_record=alma_record, dlxs_record=dlxs_record)[key] for key in headers[2:]])
 
 
 
@@ -128,6 +132,7 @@ print(missing_alma, missing_dlxs)
 
 mu.write_json("passed.json", passed)
 mu.write_json("investigate.json", investigate)
+mu.write_csv("passed.csv", passed_csv)
 
 
 print("done")
