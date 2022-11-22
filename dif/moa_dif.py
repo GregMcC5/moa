@@ -78,7 +78,7 @@ for key in keys:
                                         record["issues"].append("language")
                             else:
                                 investigate.append({"alma_id":alma_record["id"], "dlxs_id" : dlxs_record["id"], "alma_language" : alma_record["language"], "dlxs_language" : dlxs_record["language"], "issues" : ["language"]})
-                        #matching test
+                        #language test
                         elif dlxs_record["language"].lower() not in ("eng", "English") or alma_record["language"].lower() not in ("eng", "English"):
                             if alma_record["id"] + dlxs_record["id"] in [record["alma_id"] + record["dlxs_id"] for record in investigate if "alma_id" in record.keys() and "dlxs_id" in record.keys()]:
                                 for record in investigate:
