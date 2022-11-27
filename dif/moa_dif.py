@@ -167,7 +167,7 @@ title_fuzz_file.close
     #updated the dlxs content with more correct dlxs pub_date data; should be good now!
 
 print("missing dlxs:", len(missing_dlxs), "\nmissing alma:", len(missing_alma))
-print(missing_alma, missing_dlxs)
+#print(missing_alma, missing_dlxs)
 
 mu.write_json("passed.json", passed)
 mu.write_json("investigate.json", investigate)
