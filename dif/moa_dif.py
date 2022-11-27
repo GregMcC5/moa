@@ -1,4 +1,4 @@
-import metadata_utils as mu
+import find_stubs.metadata_utils as mu
 from fuzzywuzzy import fuzz
 import re
 

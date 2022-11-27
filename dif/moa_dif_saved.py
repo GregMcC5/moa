@@ -1,7 +1,7 @@
 #This is an only version fo the dif that I saved before attempting to fix all my variables.
 # see this commit for more: https://github.com/GregMcC5/moa/commit/289ac8b3d54a6ccd50446e9728b160a7a59ca185
 
-import metadata_utils as mu
+import find_stubs.metadata_utils as mu
 from fuzzywuzzy import fuzz
 
 def fold_records(dlxs_record, alma_record):
