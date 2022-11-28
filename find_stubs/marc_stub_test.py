@@ -6,8 +6,9 @@ fulls = []
 with open("full_moa_export.mrc", 'rb') as data:
     reader = pymarc.MARCReader(data)
     for record in reader:
-        if str(record["001"])[6:] == "99187298328706381":
+        if str(record["001"])[6:] == "99187365819206381":
             print("stub", len([thing for thing in record]))
+            print(record.title())
         if str(record["001"])[6:] == "990003184960106381":
             print("full", len([thing for thing in record]))
 
