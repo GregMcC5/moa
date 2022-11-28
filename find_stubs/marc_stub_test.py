@@ -14,9 +14,9 @@ with open("full_moa_export.mrc", 'rb') as data:
 
         if len([x for x in record]) < 15:  #<--subject to discussion
             print(record["001"])
-            stubs.append(str(record["001"])[6:])
+            stubs.append([str(record["001"])[6:], len([thing for thing in record])])
         else:
-            fulls.append(str(record["001"])[6:])
+            fulls.append([str(record["001"])[6:], len([thing for thing in record])])
 
 print(f'''
     stubs = {len(stubs)}
@@ -26,5 +26,5 @@ print(f'''
 
 alma_stubs = open("ALMA_stubs.txt", 'w')
 for entry in stubs:
-    print(entry, file=alma_stubs)
+    print(entry[0], entry[1], file=alma_stubs)
 alma_stubs.close
