@@ -17,6 +17,8 @@ def fold_records(alma_record, dlxs_record):
 
     return folded_record
 
+#Reading Files
+
 keys = mu.read_csv("id_key_test.csv")
 alma = mu.read_json("alma_moa_extracted.json")
 dlxs = mu.read_json("dlxs_moa_extracted.json")
@@ -27,12 +29,7 @@ dlxs = mu.read_json("dlxs_moa_extracted.json")
 #   -filter non-english items
 #   -output: CSV of items that passed, CSV of items that "failed"/need manual investigation
 
-
-#-------------------
-#--title fuzz test--
-#-------------------
-#gets fuzzy score between correspnoding alma and dlxs titles, and prints them (w/ score)
-#to title_fuzz_output.txt. We can review that doc to assess the success of the fuzzy apporach.
+#- Doing Dif
 
 THRESHOLD = 90 #<--subject to discussion/debate/reconsideration
 fuzz_pass = []
@@ -64,11 +61,10 @@ for key in keys:
         #-Year (matching) Test
         if dlxs_record["pub_date"] != None and alma_record["pub_date"] != None and dlxs_record["pub_date"].strip("[").strip("]").strip(".").strip(",").strip("?") != alma_record['pub_date'].strip("[").strip("]").strip(".").strip(",").strip("?"):
             if alma_record["id"] + dlxs_record["id"] in [record["alma_id"] + record["dlxs_id"] for record in investigate if "alma_id" in record.keys() and "dlxs_id" in record.keys()]:
-                for record in investigate:
-                    if "alma_id" in record.keys() and "dlxs_id" in record.keys() and alma_record["id"] + dlxs_record["id"] == record["alma_id"] + record["dlxs_id"]:
-                        record["alma_date"] = alma_record["pub_date"]
-                        record["dlxs_date"] = dlxs_record["pub_date"]
-                        record["issues"].append("date")
+                record = [x for x in investigate if "alma_id" in x.keys() and "dlxs_id" in x.keys() and alma_record["id"] + dlxs_record["id"] == x["alma_id"] + x["dlxs_id"]][0]
+                record["alma_date"] = alma_record["pub_date"]
+                record["dlxs_date"] = dlxs_record["pub_date"]
+                record["issues"].append("date")
             else:
                 investigate.append({"alma_id":alma_record["id"], "dlxs_id" : dlxs_record["id"],"issues" : ["date"],"alma_date" : alma_record["pub_date"], "dlxs_date" : dlxs_record["pub_date"]})
 
@@ -76,21 +72,19 @@ for key in keys:
         #if none
         if dlxs_record["language"] is None or alma_record["language"] is None:
             if alma_record["id"] + dlxs_record["id"] in [record["alma_id"] + record["dlxs_id"] for record in investigate if "alma_id" in record.keys() and "dlxs_id" in record.keys()]:
-                for record in investigate:
-                    if "alma_id" in record.keys() and "dlxs_id" in record.keys() and alma_record["id"] + dlxs_record["id"] == record["alma_id"] + record["dlxs_id"]:
-                        record["alma_langugae"] = alma_record["language"]
-                        record["dlxs_language"] = dlxs_record["language"]
-                        record["issues"].append("language")
+                record = [x for x in investigate if "alma_id" in x.keys() and "dlxs_id" in x.keys() and alma_record["id"] + dlxs_record["id"] == x["alma_id"] + x["dlxs_id"]][0]
+                record["alma_langugae"] = alma_record["language"]
+                record["dlxs_language"] = dlxs_record["language"]
+                record["issues"].append("language")
             else:
                 investigate.append({"alma_id":alma_record["id"], "dlxs_id" : dlxs_record["id"],"issues" : ["language"], "alma_language" : alma_record["language"], "dlxs_language" : dlxs_record["language"]})
         #if not english
         elif dlxs_record["language"].lower() not in ("eng", "English") or alma_record["language"].lower() not in ("eng", "English"):
             if alma_record["id"] + dlxs_record["id"] in [record["alma_id"] + record["dlxs_id"] for record in investigate if "alma_id" in record.keys() and "dlxs_id" in record.keys()]:
-                for record in investigate:
-                    if "alma_id" in record.keys() and "dlxs_id" in record.keys() and alma_record["id"] + dlxs_record["id"] == record["alma_id"] + record["dlxs_id"]:
-                        record["alma_langugae"] = alma_record["language"]
-                        record["dlxs_language"] = dlxs_record["language"]
-                        record["issues"].append("language")
+                record = [x for x in investigate if "alma_id" in x.keys() and "dlxs_id" in x.keys() and alma_record["id"] + dlxs_record["id"] == x["alma_id"] + x["dlxs_id"]][0]
+                record["alma_langugae"] = alma_record["language"]
+                record["dlxs_language"] = dlxs_record["language"]
+                record["issues"].append("language")
             else:
                 investigate.append({"alma_id":alma_record["id"], "dlxs_id" : dlxs_record["id"], "issues" : ["language"], "alma_language" : alma_record["language"], "dlxs_language" : dlxs_record["language"], "issues" : ["language"]})
 
@@ -103,11 +97,10 @@ for key in keys:
             if test_year:
                 if test_year > 1930:
                     if alma_record["id"] + dlxs_record["id"] in [record["alma_id"] + record["dlxs_id"] for record in investigate if "alma_id" in record.keys() and "dlxs_id" in record.keys()]:
-                        for record in investigate:
-                            if "alma_id" in record.keys() and "dlxs_id" in record.keys() and alma_record["id"] + dlxs_record["id"] == record["alma_id"] + record["dlxs_id"]:
-                                record["alma_date"] = alma_record["pub_date"]
-                                record["dlxs_date"] = dlxs_record["pub_date"]
-                                record["issues"].append("date_range")
+                        record = [x for x in investigate if "alma_id" in x.keys() and "dlxs_id" in x.keys() and alma_record["id"] + dlxs_record["id"] == x["alma_id"] + x["dlxs_id"]][0]
+                        record["alma_date"] = alma_record["pub_date"]
+                        record["dlxs_date"] = dlxs_record["pub_date"]
+                        record["issues"].append("date_range")
                     else:
                         investigate.append({"alma_id":alma_record["id"], "dlxs_id" : dlxs_record["id"], "issues" : ["date_range"], "alma_date" : alma_record["pub_date"], "dlxs_date" : dlxs_record["pub_date"]})
 
@@ -132,44 +125,11 @@ for entry in investigate:
     investigate_csv.append(entry_list)
 
 
-
-
-
 title_fuzz_file.close
 
-#-------No Longer in Use---------
-#--strict (non-fuzzy) filtering--
-#--------------------------------
-#sort on basis of title matching,year matching, dumping into either of the two groups below
-
-
-# for key in keys:
-#     #-verify match via keys and access
-#     if str(key[2]) in [alma_record["id"] for alma_record in alma] and key[0] in [dlxs_record["id"] for dlxs_record in dlxs]:
-#         for alma_record in alma:
-#             if str(alma_record["id"]) == str(key[2]):
-#                 for dlxs_record in dlxs:
-#                     if str(dlxs_record["id"]) == str(key[0]):
-#                         #-title check
-#                         #-dlxs titles are looking like they tend to be shorter, so I'm doing 'in' tests, checking with dlxs title in alma title
-#                         if dlxs_record["title"].strip().lower() not in alma_record["title"].strip().lower():
-#                             investigate.append([val for val in alma_record.values()])
-#                         else:
-#                             strict_title_pass_counter += 1
-
-
-# print(f"{strict_title_pass_counter} out of {len(keys)} passed the initial scrict title test")
-
-#print(f"{year_pass_counter} passed the year test")
-
-#output:
-#2216 out of 9981 passed the initial strict title test
-#9922 out of 9981 passed the initial fuzz test
-#3 pased the year test <--- I'm realizing that something odd is going on with the dlxs dates, (they're all from the mid-2000s) taking a look at this and will report.
-    #updated the dlxs content with more correct dlxs pub_date data; should be good now!
+#-Writing Files
 
 print("missing dlxs:", len(missing_dlxs), "\nmissing alma:", len(missing_alma))
-#print(missing_alma, missing_dlxs)
 
 mu.write_json("passed.json", passed)
 mu.write_json("investigate.json", investigate)
