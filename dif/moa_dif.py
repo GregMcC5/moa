@@ -29,7 +29,6 @@ dlxs = mu.read_json("dlxs_moa_extracted.json")
 #   -filter non-english items
 #   -output: CSV of items that passed, CSV of items that "failed"/need manual investigation
 
-#- Doing Dif
 
 THRESHOLD = 90 #<--subject to discussion/debate/reconsideration
 fuzz_pass = []
@@ -91,8 +90,10 @@ for key in keys:
         #-Year (Range) Test
         if dlxs_record["pub_date"] != None and alma_record["pub_date"] != None and dlxs_record["pub_date"].strip("[").strip("]").strip(".").strip(",").strip("?") == alma_record['pub_date'].strip("[").strip("]").strip(".").strip(",").strip("?"):
             try:
-                test_year = int(re.findall("\d\d\d\d",dlxs_record["pub_date"])[0])
+                test_year = int(min(re.findall("\d\d\d\d",dlxs_record["pub_date"])))
+                print(test_year)
             except:
+                print("none")
                 test_year = None
             if test_year:
                 if test_year > 1930:
@@ -136,6 +137,4 @@ mu.write_json("investigate.json", investigate)
 mu.write_csv("passed.csv", passed_csv)
 mu.write_csv("investigate.csv", investigate_csv)
 
-
-finish = time.perf_counter()
-print(f"done, completed in {finish - start}")
+print(f"done")
