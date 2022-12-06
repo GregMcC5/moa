@@ -133,8 +133,11 @@ title_fuzz_file.close
 print("missing dlxs:", len(missing_dlxs), "\nmissing alma:", len(missing_alma))
 
 mu.write_json("passed.json", passed)
-mu.write_json("investigate.json", investigate)
+mu.write_json("investigate2.json", investigate)
 mu.write_csv("passed.csv", passed_csv)
-mu.write_csv("investigate.csv", investigate_csv)
+mu.write_csv("investigate.csv2", investigate_csv)
+
+mu.write_json("missing_alma.json", missing_alma)
+mu.write_json("missing_dlxs.json", missing_dlxs)
 
 print(f"done")

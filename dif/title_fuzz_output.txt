@@ -551,10 +551,6 @@ fuzz score: 100
 alma title: The Tribune tracts.
 dlxs title: The Tribune tracts.
 
-fuzz score: 100
-alma title: Annual report of the Commissioner of Indian Affairs to the Secretary of the Interior
-dlxs title: Annual report of the Commissioner of Indian Affairs to the Secretary of the Interior.
-
 fuzz score: 99
 alma title: Statistics of mines and mining in the states and territories west of the Rocky Mountains ; being the [1st-8th] annual report of Rossiter W. Raymond, U.S. commissioner of mining statistics.
 dlxs title: Statistics of mines and mining in the states and territories west of the Rocky Mountains; being the [1st-8th] annual report of Rossiter W. Raymond, U.S. commissioner of mining statistics.
@@ -12224,10 +12220,6 @@ alma title: The Babylonian Expedition of the University of Pennsylvania.
 dlxs title: The Babylonian Expedition of the University of Pennsylvania. Series D. Researches and treatises.
 
 fuzz score: 100
-alma title: Smithsonian contributions to knowledge.
-dlxs title: Smithsonian contributions to knowledge.
-
-fuzz score: 100
 alma title: Memoirs read before the Boston Society of Natural History.
 dlxs title: Memoirs read before the Boston Society of Natural History.
 
@@ -15059,10 +15051,6 @@ fuzz score: 100
 alma title: The iron furnace: or, Slavery and secession.
 dlxs title: The iron furnace: or, Slavery and secession. By Rev. John H. Aughey, a refugee from Mississippi.
 
-fuzz score: 100
-alma title: Principles of the economic philosophy of society, government, and industry, by Van Buren Denslow, LL.D
-dlxs title: Principles of the economic philosophy of society, government, and industry, by Van Buren Denslow, LL.D.
-
 fuzz score: 98
 alma title: The uprising of a great people. : the United States in 1861. To which is added A word of peace on the difference between England and the United States. /
 dlxs title: The uprising of a great people. the United States in 1861. To which is added A word of peace on the difference between England and the United States. From the French of Count Agénor de Gasparin. By Mary L. Booth.
@@ -16067,10 +16055,6 @@ fuzz score: 97
 alma title: Report upon the Colorado River of the West, explored in 1857 and 1858/
 dlxs title: Report upon the Colorado River of the West,:  explored in 1857 and 1858/ by Joseph C. Ives.
 
-fuzz score: 100
-alma title: Washington observations
-dlxs title: Washington observations.
-
 fuzz score: 97
 alma title: The history of the Peloponnesian war /
 dlxs title: The history of the Peloponnesian war, by Thucydides. By John J. Owen.
@@ -16526,10 +16510,6 @@ dlxs title: Behind the scenes in candy factories.
 fuzz score: 95
 alma title: The new West. : Its Outletes to the ocean.
 dlxs title: The new West. Its Outletes to the ocean.
-
-fuzz score: 100
-alma title: Report on the transportation route along the Wisconsin and Fox rivers, in the state of Wisconsin, between the Mississippi river and lake Michigan
-dlxs title: Report on the transportation route along the Wisconsin and Fox rivers, in the state of Wisconsin, between the Mississippi river and lake Michigan.
 
 fuzz score: 100
 alma title: Proceedings of the Congressional convention, held in the city of St. Louis, on 13th, 14th and 15th days of May, 1873.
@@ -17714,14 +17694,6 @@ dlxs title: Reports on the geological survey of the state of Missouri. 1855-1871
 fuzz score: 100
 alma title: Report of the Geological survey of the state of Missouri, including field work of 1873-1874 ...
 dlxs title: Report of the Geological survey of the state of Missouri, including field work of 1873-1874 ...
-
-fuzz score: 100
-alma title: Geology of New Jersey
-dlxs title: Geology of New Jersey.
-
-fuzz score: 100
-alma title: Geology of the county of Cape May, state of New Jersey
-dlxs title: Geology of the county of Cape May, state of New Jersey.
 
 fuzz score: 100
 alma title: Report of the exploring expedition from Santa Fé, New Mexico, to the junction of the Grand and Green Rivers of the great Colorado of the West, in 1859 under the command of Capt. J.N. Macomb.
@@ -24968,10 +24940,6 @@ alma title: Address before the American association for the advancement of scien
 dlxs title: Address before the American association for the advancement of science,
 
 fuzz score: 100
-alma title: Elements of astronomy ...
-dlxs title: Elements of astronomy ...
-
-fuzz score: 100
 alma title: Lecture on the great unfinished problems of the universe.
 dlxs title: Lecture on the great unfinished problems of the universe.
 
@@ -26003,10 +25971,6 @@ fuzz score: 99
 alma title: Report on the geological and agricultural survey of the state of Mississippi /
 dlxs title: Report on the geological and agricultural survey of the state of Mississippi. By Eugene W. Hilgard, state geologist.
 
-fuzz score: 100
-alma title: Report on the geology and agriculture of the state of Mississippi: by Eug. W. Hilgard, PH. D., state geologist. Printed by order of the legislature
-dlxs title: Report on the geology and agriculture of the state of Mississippi: by Eug. W. Hilgard, PH. D., state geologist. Printed by order of the legislature.
-
 fuzz score: 99
 alma title: The San Juan mines : a compendium of the mineral resources of southwestern Colorado, together with a description of its mountain scenery ... including the mining laws of Colorado and the acts of Congress relating thereto.
 dlxs title: The San Juan mines; a compendium of the mineral resources of southwestern Colorado, together with a description of its mountain scenery ... including the mining laws of Colorado and the acts of Congress relating thereto.
@@ -26166,10 +26130,6 @@ dlxs title: Report, articles of association and by-laws of the Clifton mining co
 fuzz score: 100
 alma title: Statement concerning the Devon mines of Lake Superior.
 dlxs title: Statement concerning the Devon mines of Lake Superior.
-
-fuzz score: 100
-alma title: Articles of association and by-laws of the Shelden mining co. of Lake Superior
-dlxs title: Articles of association and by-laws of the Shelden mining co. of Lake Superior.
 
 fuzz score: 100
 alma title: Report of the directors and mine agent of the Star copper company, with letters from Wn. H. Stevens and A. C. Davis, esqs.
@@ -27958,10 +27918,6 @@ dlxs title: List of post offices in the United States ..:
 fuzz score: 100
 alma title: List of post offices in the United States ..
 dlxs title: List of post offices in the United States ..: 
-
-fuzz score: 100
-alma title: The Riverside magazine for young people
-dlxs title: The Riverside magazine for young people.
 
 fuzz score: 100
 alma title: Journals of general conventions of the Protestant Episcopal church, in the United States, 1785-1835.
@@ -36720,10 +36676,6 @@ alma title: Discussion and analysis of Professor Coffin's tables and charts of t
 dlxs title: Discussion and analysis of Professor Coffin's tables and charts of the Winds of the globe. By Dr. Alexander J. Woeikof ...
 
 fuzz score: 100
-alma title: On certain storms in Europe and America, December 1836. By Elias Loomis ...
-dlxs title: On certain storms in Europe and America, December 1836. By Elias Loomis ...
-
-fuzz score: 100
 alma title: The depths of the sea. An account of the general results of the dredging cruises of H. M. SS. 'Porcupine' and 'Lighting' during the summers of 1868, 1869, and 1870, under the scientific direction of Dr. Carpenter, F. R. S., J. Gwyn Jeffreys, F. R. S., and Dr. Wyville Thomson, F. R. S.
 dlxs title: The depths of the sea. An account of the general results of the dredging cruises of H. M. SS. 'Porcupine' and 'Lighting' during the summers of 1868, 1869, and 1870, under the scientific direction of Dr. Carpenter, F. R. S., J. Gwyn Jeffreys, F. R. S., and Dr. Wyville Thomson, F. R. S. By C. Wyville Thomson ...
 
@@ -36918,10 +36870,6 @@ dlxs title: Improvements of New York harbor, 1885 to 1891. Compliments of Joseph
 fuzz score: 99
 alma title: Des Moines and Rock River rapids, in the Mississippi River. : Letter from the Secretary of war, transmitting the inspection report of Colonel S. H. Long, and the report of Lieutenant Warren of his operations during the past year on the Des Moines and Rock River rapids, in the Mississippi River.
 dlxs title: Des Moines and Rock River rapids, in the Mississippi River. Letter from the Secretary of war, transmitting the inspection report of Colonel S. H. Long, and the report of Lieutenant Warren of his operations during the past year on the Des Moines and Rock River rapids, in the Mississippi River.
-
-fuzz score: 100
-alma title: Theory of the strength of materials, illustrated by applications to machines and buildings ...
-dlxs title: Theory of the strength of materials, illustrated by applications to machines and buildings ...
 
 fuzz score: 100
 alma title: Report of the Hon. Mark D. Wilber, chairman ... on the Detroit park bill, March 5, 1873.
@@ -39424,10 +39372,6 @@ alma title: A missionary among cannibals : or, the life of John Hunt who was emi
 dlxs title: A missionary among cannibals : or, the life of John Hunt who was eminently successful in converting the people of Fiji from cannibalism to Christianity / by George Stringer Rowe.
 
 fuzz score: 100
-alma title: American nationalism as expressing the rational purpose in government : being a declaration of the principles of the American Nationalist Party / by Ingram Hughes
-dlxs title: American nationalism as expressing the rational purpose in government : being a declaration of the principles of the American Nationalist Party / by Ingram Hughes.
-
-fuzz score: 100
 alma title: Does protection protect? An examination of the effect of different forms of tariff upon American industry.
 dlxs title: Does protection protect? An examination of the effect of different forms of tariff upon American industry.
 
@@ -39550,10 +39494,6 @@ dlxs title: Panama in 1855. An account of the Panama rail-road, of the cities of
 fuzz score: 100
 alma title: Communication from the secretary of the Treasury, transmitting, in compliance with a resolution of the Senate of March 8, 1851, the report of Israel D. Andrews ... on the trade and commerce of the British North American colonies, and upon the trade of the Great lakes and rivers; also, notices of the internal improvements in each state, of the gulf of Mexico and straits of Florida, and a paper on the cotton crop of the United States.
 dlxs title: Communication from the secretary of the Treasury, transmitting, in compliance with a resolution of the Senate of March 8, 1851, the report of Israel D. Andrews ... on the trade and commerce of the British North American colonies, and upon the trade of the Great lakes and rivers; also, notices of the internal improvements in each state, of the gulf of Mexico and straits of Florida, and a paper on the cotton crop of the United States.
-
-fuzz score: 100
-alma title: Culture and history in Eastern Europe / Dennis P. Hupchick
-dlxs title: Culture and history in Eastern Europe / Dennis P. Hupchick.
 
 fuzz score: 100
 alma title: The Sabbath hymn book: for the service of song in the house of the Lord.
@@ -39710,3 +39650,1239 @@ dlxs title: Headwaters of the Mississippi : comprising biographical sketches of 
 fuzz score: 99
 alma title: My story of the war a woman's narrative of four years personal experience as nurse in the Union army, and in relief work at home, in hospitals, camps, and at the front, during the war of the rebellion : with anecdotes, pathetic incidents, and thrilling reminiscences portraying the lights and shadows of hospital life and the sanitary service of the war /
 dlxs title: My story of the war : a woman's narrative of four years personal experience as nurse in the Union army, and in relief work at home, in hospitals, camps, and at the front, during the war of the rebellion : with anecdotes, pathetic incidents, and thrilling reminiscences portraying the lights and shadows of hospital life and the sanitary service of the war / by Mary A. Livermore.
+
+fuzz score: 100
+alma title: Special bulletins.
+dlxs title: Special bulletins. [1923]
+
+fuzz score: 100
+alma title: Report of the State Board of Housing. [1907]
+dlxs title: Report of the State Board of Housing. [1907]
+
+fuzz score: 100
+alma title: A history of New York, from the beginning of the world to the end of the Dutch dynasty.
+dlxs title: A history of New York, from the beginning of the world to the end of the Dutch dynasty. Diedrich Knickerbocker [pseud.]
+
+fuzz score: 100
+alma title: Report of the State board of housing... [1926-1938]
+dlxs title: Report of the State board of housing... [1926-1938] [1928]
+
+fuzz score: 100
+alma title: Report of the State board of housing... [1926-1938]
+dlxs title: Report of the State board of housing... [1926-1938] [1929]
+
+fuzz score: 100
+alma title: Report of the State board of housing... [1926-1938]
+dlxs title: Report of the State board of housing... [1926-1938] [1930]
+
+fuzz score: 100
+alma title: Report of the Commission of housing and regional planning to Governor Alfred E. Smith and to the Legislature of the state of New York.
+dlxs title: Report of the Commission of housing and regional planning to Governor Alfred E. Smith and to the Legislature of the state of New York. [1925]
+
+fuzz score: 100
+alma title: New York city newspapers, 1820-1850, a bibliography,
+dlxs title: New York city newspapers, 1820-1850, a bibliography,
+
+fuzz score: 100
+alma title: New York Walk book; suggestions for excursions afoot within a radius of fifty to one hundred miles of the city and including Westchester County, the Highland of the Hudson and the Ramapo, northern and central New Jersey and the New Jersey pine barrens, Long Island, the Shawangunk Range, the Catskills, and the Taconies ...
+dlxs title: New York Walk book; suggestions for excursions afoot within a radius of fifty to one hundred miles of the city and including Westchester County, the Highland of the Hudson and the Ramapo, northern and central New Jersey and the New Jersey pine barrens, Long Island, the Shawangunk Range, the Catskills, and the Taconies ...
+
+fuzz score: 97
+alma title: The origin and history of the New York Employing Printers' Association : the evolution of a trade association /
+dlxs title: The origin and history of the New York Employing Printers' Association; the evolution of a trade association, by Charlotte E. Morgan.
+
+fuzz score: 100
+alma title: Publication.
+dlxs title: Publication.  [Vol. 11]
+
+fuzz score: 100
+alma title: Publication.
+dlxs title: Publication.  [Vol. 12]
+
+fuzz score: 100
+alma title: Publication.
+dlxs title: Publication.  [Vol. 13]
+
+fuzz score: 100
+alma title: Publication.
+dlxs title: Publication.  [Vol. 14]
+
+fuzz score: 100
+alma title: Publication.
+dlxs title: Publication.  [Vol. 15]
+
+fuzz score: 100
+alma title: Publication.
+dlxs title: Publication.  [Vol. 16]
+
+fuzz score: 100
+alma title: Publication.
+dlxs title: Publication.  [Vol. 17]
+
+fuzz score: 100
+alma title: Publication.
+dlxs title: Publication.  [Vol. 18]
+
+fuzz score: 100
+alma title: Publication.
+dlxs title: Publication.  [Vol. 19]
+
+fuzz score: 100
+alma title: Publication.
+dlxs title: Publication.  [Vol. 20]
+
+fuzz score: 100
+alma title: Publication.
+dlxs title: Publication.  [Vol. 21]
+
+fuzz score: 100
+alma title: Publication.
+dlxs title: Publication.  [Vol. 22]
+
+fuzz score: 100
+alma title: Publication.
+dlxs title: Publication.  [Vol. 23]
+
+fuzz score: 100
+alma title: Publication.
+dlxs title: Publication.  [Vol. 24]
+
+fuzz score: 100
+alma title: Publication.
+dlxs title: Publication.  [Vol. 25]
+
+fuzz score: 100
+alma title: Publication.
+dlxs title: Publication.  [Vol. 26]
+
+fuzz score: 100
+alma title: Publication.
+dlxs title: Publication.  [Vol. 27]
+
+fuzz score: 100
+alma title: Publication.
+dlxs title: Publication.  [Vol. 28]
+
+fuzz score: 100
+alma title: Publication.
+dlxs title: Publication.  [Vol. 29]
+
+fuzz score: 100
+alma title: Publication.
+dlxs title: Publication.  [Vol. 30]
+
+fuzz score: 100
+alma title: Publication.
+dlxs title: Publication.  [Vol. 31]
+
+fuzz score: 100
+alma title: Publication.
+dlxs title: Publication.  [Vol. 32]
+
+fuzz score: 100
+alma title: Publication.
+dlxs title: Publication.  [Vol. 33]
+
+fuzz score: 100
+alma title: Publication.
+dlxs title: Publication.  [Vol. 34]
+
+fuzz score: 100
+alma title: Publication.
+dlxs title: Publication.  [Vol. 35]
+
+fuzz score: 100
+alma title: Publication.
+dlxs title: Publication.  [Vol. 36]
+
+fuzz score: 100
+alma title: Publication.
+dlxs title: Publication.  [Vol. 37]
+
+fuzz score: 100
+alma title: Tidal current charts, New York Harbor.
+dlxs title: Tidal current charts, New York Harbor.
+
+fuzz score: 100
+alma title: The life of Kit Carson, hunter, trapper, guide, Indian agent, and colonel U. S. A.,
+dlxs title: The life of Kit Carson, hunter, trapper, guide, Indian agent, and colonel U. S. A., by Edward S. Ellis.
+
+fuzz score: 100
+alma title: The graphic regional plan; atlas and description ...
+dlxs title: The graphic regional plan; atlas and description ... prepared by the staff of the Regional Plan.
+
+fuzz score: 100
+alma title: Catalogue of the works of art belonging to the City of New York.
+dlxs title: Catalogue of the works of art belonging to the City of New York. Prepared and issued by the Art Commission of the City of New York.
+
+fuzz score: 100
+alma title: Catalogue of the works of art belonging to the City of New York.
+dlxs title: Catalogue of the works of art belonging to the City of New York. Prepared and issued by the Art Commission of the City of New York.
+
+fuzz score: 100
+alma title: Michigan historical collections.
+dlxs title: Michigan historical collections.  [Vol. 4]
+
+fuzz score: 100
+alma title: Michigan historical collections.
+dlxs title: Michigan historical collections.  [Vol. 17]
+
+fuzz score: 100
+alma title: Michigan historical collections.
+dlxs title: Michigan historical collections.  [Vol. 18]
+
+fuzz score: 100
+alma title: Michigan historical collections.
+dlxs title: Michigan historical collections.  [Vol. 19]
+
+fuzz score: 100
+alma title: Michigan historical collections.
+dlxs title: Michigan historical collections.  [Vol. 20]
+
+fuzz score: 100
+alma title: Michigan historical collections.
+dlxs title: Michigan historical collections.  [Vol. 21]
+
+fuzz score: 100
+alma title: Michigan historical collections.
+dlxs title: Michigan historical collections.  [Vol. 22]
+
+fuzz score: 100
+alma title: Michigan historical collections.
+dlxs title: Michigan historical collections.  [Vol. 23]
+
+fuzz score: 100
+alma title: Michigan historical collections.
+dlxs title: Michigan historical collections.  [Vol. 24]
+
+fuzz score: 100
+alma title: Michigan historical collections.
+dlxs title: Michigan historical collections.  [Vol. 25]
+
+fuzz score: 100
+alma title: Michigan historical collections.
+dlxs title: Michigan historical collections.  [Vol. 26]
+
+fuzz score: 100
+alma title: Michigan historical collections.
+dlxs title: Michigan historical collections.  [Vol. 27]
+
+fuzz score: 100
+alma title: Michigan historical collections.
+dlxs title: Michigan historical collections.  [Vol. 28]
+
+fuzz score: 100
+alma title: Michigan historical collections.
+dlxs title: Michigan historical collections.  [Vol. 29]
+
+fuzz score: 100
+alma title: Michigan historical collections.
+dlxs title: Michigan historical collections.  [Vol. 29]
+
+fuzz score: 100
+alma title: Michigan historical collections.
+dlxs title: Michigan historical collections.  [Vol. 30]
+
+fuzz score: 100
+alma title: Michigan historical collections.
+dlxs title: Michigan historical collections.  [Vol. 31]
+
+fuzz score: 100
+alma title: Michigan historical collections.
+dlxs title: Michigan historical collections.  [Vol. 32]
+
+fuzz score: 100
+alma title: Michigan historical collections.
+dlxs title: Michigan historical collections.  [Vol. 33]
+
+fuzz score: 100
+alma title: Michigan historical collections.
+dlxs title: Michigan historical collections.  [Vol. 34]
+
+fuzz score: 100
+alma title: Michigan historical collections.
+dlxs title: Michigan historical collections.  [Vol. 35]
+
+fuzz score: 100
+alma title: Michigan historical collections.
+dlxs title: Michigan historical collections.  [Vol. 36]
+
+fuzz score: 100
+alma title: Michigan historical collections.
+dlxs title: Michigan historical collections.  [Vol. 37]
+
+fuzz score: 100
+alma title: Michigan historical collections.
+dlxs title: Michigan historical collections.  [Vol. 38]
+
+fuzz score: 100
+alma title: Michigan historical collections.
+dlxs title: Michigan historical collections.  [Vol. 39]
+
+fuzz score: 100
+alma title: Michigan historical collections.
+dlxs title: Michigan historical collections.  [Vol. 40]
+
+fuzz score: 100
+alma title: Michigan historical collections.
+dlxs title: Michigan historical collections. [IND1]
+
+fuzz score: 100
+alma title: Michigan historical collections.
+dlxs title: Michigan historical collections. [IND2]
+
+fuzz score: 100
+alma title: Greater New York.
+dlxs title: Greater New York.
+
+fuzz score: 100
+alma title: Collections of the State Historical Society of Wisconsin.
+dlxs title: Collections of the State Historical Society of Wisconsin.  [Vol. 14]
+
+fuzz score: 100
+alma title: Collections of the State Historical Society of Wisconsin.
+dlxs title: Collections of the State Historical Society of Wisconsin.  [Vol. 15]
+
+fuzz score: 100
+alma title: Collections of the State Historical Society of Wisconsin.
+dlxs title: Collections of the State Historical Society of Wisconsin.  [Vol. 16]
+
+fuzz score: 100
+alma title: Collections of the State Historical Society of Wisconsin.
+dlxs title: Collections of the State Historical Society of Wisconsin.  [Vol. 17]
+
+fuzz score: 100
+alma title: Collections of the State Historical Society of Wisconsin.
+dlxs title: Collections of the State Historical Society of Wisconsin.  [Vol. 18]
+
+fuzz score: 100
+alma title: Collections of the State Historical Society of Wisconsin.
+dlxs title: Collections of the State Historical Society of Wisconsin.  [Vol. 19]
+
+fuzz score: 100
+alma title: Collections of the State Historical Society of Wisconsin.
+dlxs title: Collections of the State Historical Society of Wisconsin.  [Vol. 20]
+
+fuzz score: 100
+alma title: Collections of the State Historical Society of Wisconsin.
+dlxs title: Collections of the State Historical Society of Wisconsin.  [Vol. 22]
+
+fuzz score: 100
+alma title: Collections of the State Historical Society of Wisconsin.
+dlxs title: Collections of the State Historical Society of Wisconsin.  [Vol. 24]
+
+fuzz score: 100
+alma title: Collections of the State Historical Society of Wisconsin.
+dlxs title: Collections of the State Historical Society of Wisconsin.  [Vol. 25]
+
+fuzz score: 100
+alma title: Collections of the State Historical Society of Wisconsin.
+dlxs title: Collections of the State Historical Society of Wisconsin.  [Vol. 26]
+
+fuzz score: 100
+alma title: Collections of the State Historical Society of Wisconsin.
+dlxs title: Collections of the State Historical Society of Wisconsin.  [Vol. 27]
+
+fuzz score: 100
+alma title: Collections of the State Historical Society of Wisconsin.
+dlxs title: Collections of the State Historical Society of Wisconsin.  [Vol. 28]
+
+fuzz score: 100
+alma title: Collections of the State Historical Society of Wisconsin.
+dlxs title: Collections of the State Historical Society of Wisconsin.  [Vol. 29]
+
+fuzz score: 100
+alma title: Collections of the State Historical Society of Wisconsin.
+dlxs title: Collections of the State Historical Society of Wisconsin.  [Vol. 30]
+
+fuzz score: 100
+alma title: Collections of the State Historical Society of Wisconsin.
+dlxs title: Collections of the State Historical Society of Wisconsin.  [Vol. 31]
+
+fuzz score: 100
+alma title: Collections of the State Historical Society of Wisconsin.
+dlxs title: Collections of the State Historical Society of Wisconsin. [INDX]
+
+fuzz score: 100
+alma title: The John Watts DePeyster Publication Fund series.
+dlxs title: The John Watts DePeyster Publication Fund series.  [Vol. 1]
+
+fuzz score: 100
+alma title: The John Watts DePeyster Publication Fund series.
+dlxs title: The John Watts DePeyster Publication Fund series.  [Vol. 2]
+
+fuzz score: 100
+alma title: The John Watts DePeyster Publication Fund series.
+dlxs title: The John Watts DePeyster Publication Fund series.  [Vol. 3]
+
+fuzz score: 100
+alma title: The John Watts DePeyster Publication Fund series.
+dlxs title: The John Watts DePeyster Publication Fund series.  [Vol. 4]
+
+fuzz score: 100
+alma title: The John Watts DePeyster Publication Fund series.
+dlxs title: The John Watts DePeyster Publication Fund series.  [Vol. 6]
+
+fuzz score: 100
+alma title: The John Watts DePeyster Publication Fund series.
+dlxs title: The John Watts DePeyster Publication Fund series.  [Vol. 8]
+
+fuzz score: 100
+alma title: The John Watts DePeyster Publication Fund series.
+dlxs title: The John Watts DePeyster Publication Fund series.  [Vol. 9]
+
+fuzz score: 100
+alma title: The John Watts DePeyster Publication Fund series.
+dlxs title: The John Watts DePeyster Publication Fund series.  [Vol. 10]
+
+fuzz score: 100
+alma title: The John Watts DePeyster Publication Fund series.
+dlxs title: The John Watts DePeyster Publication Fund series.  [Vol. 14]
+
+fuzz score: 100
+alma title: The John Watts DePeyster Publication Fund series.
+dlxs title: The John Watts DePeyster Publication Fund series.  [Vol. 15]
+
+fuzz score: 100
+alma title: The John Watts DePeyster Publication Fund series.
+dlxs title: The John Watts DePeyster Publication Fund series.  [Vol. 16]
+
+fuzz score: 100
+alma title: The John Watts DePeyster Publication Fund series.
+dlxs title: The John Watts DePeyster Publication Fund series.  [Vol. 17]
+
+fuzz score: 100
+alma title: The John Watts DePeyster Publication Fund series.
+dlxs title: The John Watts DePeyster Publication Fund series.  [Vol. 18]
+
+fuzz score: 100
+alma title: The John Watts DePeyster Publication Fund series.
+dlxs title: The John Watts DePeyster Publication Fund series.  [Vol. 19]
+
+fuzz score: 100
+alma title: The John Watts DePeyster Publication Fund series.
+dlxs title: The John Watts DePeyster Publication Fund series.  [Vol. 20]
+
+fuzz score: 100
+alma title: The John Watts DePeyster Publication Fund series.
+dlxs title: The John Watts DePeyster Publication Fund series.  [Vol. 21]
+
+fuzz score: 100
+alma title: The John Watts DePeyster Publication Fund series.
+dlxs title: The John Watts DePeyster Publication Fund series.  [Vol. 22]
+
+fuzz score: 100
+alma title: The John Watts DePeyster Publication Fund series.
+dlxs title: The John Watts DePeyster Publication Fund series.  [Vol. 23]
+
+fuzz score: 100
+alma title: The John Watts DePeyster Publication Fund series.
+dlxs title: The John Watts DePeyster Publication Fund series.  [Vol. 24]
+
+fuzz score: 100
+alma title: The John Watts DePeyster Publication Fund series.
+dlxs title: The John Watts DePeyster Publication Fund series.  [Vol. 25]
+
+fuzz score: 100
+alma title: The John Watts DePeyster Publication Fund series.
+dlxs title: The John Watts DePeyster Publication Fund series.  [Vol. 26]
+
+fuzz score: 100
+alma title: The John Watts DePeyster Publication Fund series.
+dlxs title: The John Watts DePeyster Publication Fund series.  [Vol. 27]
+
+fuzz score: 100
+alma title: The John Watts DePeyster Publication Fund series.
+dlxs title: The John Watts DePeyster Publication Fund series.  [Vol. 28]
+
+fuzz score: 100
+alma title: The John Watts DePeyster Publication Fund series.
+dlxs title: The John Watts DePeyster Publication Fund series.  [Vol. 29]
+
+fuzz score: 100
+alma title: The John Watts DePeyster Publication Fund series.
+dlxs title: The John Watts DePeyster Publication Fund series.  [Vol. 30]
+
+fuzz score: 100
+alma title: The John Watts DePeyster Publication Fund series.
+dlxs title: The John Watts DePeyster Publication Fund series.  [Vol. 31]
+
+fuzz score: 100
+alma title: The John Watts DePeyster Publication Fund series.
+dlxs title: The John Watts DePeyster Publication Fund series.  [Vol. 32]
+
+fuzz score: 100
+alma title: The John Watts DePeyster Publication Fund series.
+dlxs title: The John Watts DePeyster Publication Fund series.  [Vol. 33]
+
+fuzz score: 100
+alma title: The John Watts DePeyster Publication Fund series.
+dlxs title: The John Watts DePeyster Publication Fund series.  [Vol. 34]
+
+fuzz score: 100
+alma title: The John Watts DePeyster Publication Fund series.
+dlxs title: The John Watts DePeyster Publication Fund series.  [Vol. 35]
+
+fuzz score: 100
+alma title: The John Watts DePeyster Publication Fund series.
+dlxs title: The John Watts DePeyster Publication Fund series.  [Vol. 36]
+
+fuzz score: 100
+alma title: The John Watts DePeyster Publication Fund series.
+dlxs title: The John Watts DePeyster Publication Fund series.  [Vol. 37]
+
+fuzz score: 100
+alma title: The John Watts DePeyster Publication Fund series.
+dlxs title: The John Watts DePeyster Publication Fund series.  [Vol. 38]
+
+fuzz score: 100
+alma title: The John Watts DePeyster Publication Fund series.
+dlxs title: The John Watts DePeyster Publication Fund series.  [Vol. 39]
+
+fuzz score: 100
+alma title: The John Watts DePeyster Publication Fund series.
+dlxs title: The John Watts DePeyster Publication Fund series.  [Vol. 40]
+
+fuzz score: 100
+alma title: The John Watts DePeyster Publication Fund series.
+dlxs title: The John Watts DePeyster Publication Fund series.  [Vol. 41]
+
+fuzz score: 100
+alma title: The John Watts DePeyster Publication Fund series.
+dlxs title: The John Watts DePeyster Publication Fund series.  [Vol. 42]
+
+fuzz score: 100
+alma title: The John Watts DePeyster Publication Fund series.
+dlxs title: The John Watts DePeyster Publication Fund series.  [Vol. 43]
+
+fuzz score: 100
+alma title: The John Watts DePeyster Publication Fund series.
+dlxs title: The John Watts DePeyster Publication Fund series.  [Vol. 44]
+
+fuzz score: 100
+alma title: The John Watts DePeyster Publication Fund series.
+dlxs title: The John Watts DePeyster Publication Fund series.  [Vol. 45]
+
+fuzz score: 100
+alma title: The John Watts DePeyster Publication Fund series.
+dlxs title: The John Watts DePeyster Publication Fund series.  [Vol. 46]
+
+fuzz score: 100
+alma title: The John Watts DePeyster Publication Fund series.
+dlxs title: The John Watts DePeyster Publication Fund series.  [Vol. 47]
+
+fuzz score: 100
+alma title: The John Watts DePeyster Publication Fund series.
+dlxs title: The John Watts DePeyster Publication Fund series.  [Vol. 48]
+
+fuzz score: 100
+alma title: The John Watts DePeyster Publication Fund series.
+dlxs title: The John Watts DePeyster Publication Fund series.  [Vol. 49]
+
+fuzz score: 100
+alma title: The John Watts DePeyster Publication Fund series.
+dlxs title: The John Watts DePeyster Publication Fund series.  [Vol. 50]
+
+fuzz score: 100
+alma title: The John Watts DePeyster Publication Fund series.
+dlxs title: The John Watts DePeyster Publication Fund series.  [Vol. 51]
+
+fuzz score: 100
+alma title: The John Watts DePeyster Publication Fund series.
+dlxs title: The John Watts DePeyster Publication Fund series.  [Vol. 52]
+
+fuzz score: 100
+alma title: The John Watts DePeyster Publication Fund series.
+dlxs title: The John Watts DePeyster Publication Fund series.  [Vol. 53]
+
+fuzz score: 100
+alma title: The John Watts DePeyster Publication Fund series.
+dlxs title: The John Watts DePeyster Publication Fund series.  [Vol. 54]
+
+fuzz score: 100
+alma title: The John Watts DePeyster Publication Fund series.
+dlxs title: The John Watts DePeyster Publication Fund series.  [Vol. 55]
+
+fuzz score: 100
+alma title: The John Watts DePeyster Publication Fund series.
+dlxs title: The John Watts DePeyster Publication Fund series.  [Vol. 56]
+
+fuzz score: 100
+alma title: Proceedings.
+dlxs title: Proceedings.  [Vol. 1]
+
+fuzz score: 100
+alma title: Proceedings.
+dlxs title: Proceedings.  [Vol. 2]
+
+fuzz score: 100
+alma title: Proceedings.
+dlxs title: Proceedings.  [Vol. 3]
+
+fuzz score: 100
+alma title: Proceedings.
+dlxs title: Proceedings.  [Vol. 4]
+
+fuzz score: 100
+alma title: Proceedings.
+dlxs title: Proceedings.  [Vol. 5]
+
+fuzz score: 100
+alma title: Annual Report.
+dlxs title: Annual Report. [1926]
+
+fuzz score: 100
+alma title: Annual Report.
+dlxs title: Annual Report. [1930]
+
+fuzz score: 100
+alma title: Memorial addresses delivered before the two houses of Congress on the life and character of Abraham Lincoln, James A. Garfield, William McKinley.
+dlxs title: Memorial addresses delivered before the two houses of Congress on the life and character of Abraham Lincoln, James A. Garfield, William McKinley. Prepared in accordance with concurrent resolution of Congress, and under direction of Joint committee on printing, by Charles Rowley Cushman, clerk of Committee on printing.
+
+fuzz score: 100
+alma title: Guide leaflet.
+dlxs title: Guide leaflet.  [Vol. 63]
+
+fuzz score: 100
+alma title: Guide leaflet.
+dlxs title: Guide leaflet.  [Vol. 64]
+
+fuzz score: 100
+alma title: Guide leaflet.
+dlxs title: Guide leaflet.  [Vol. 65]
+
+fuzz score: 100
+alma title: Guide leaflet.
+dlxs title: Guide leaflet.  [Vol. 67]
+
+fuzz score: 100
+alma title: Guide leaflet.
+dlxs title: Guide leaflet.  [Vol. 68]
+
+fuzz score: 100
+alma title: Guide leaflet.
+dlxs title: Guide leaflet.  [Vol. 69]
+
+fuzz score: 100
+alma title: Guide leaflet.
+dlxs title: Guide leaflet.  [Vol. 70]
+
+fuzz score: 100
+alma title: Guide leaflet.
+dlxs title: Guide leaflet.  [Vol. 71]
+
+fuzz score: 100
+alma title: Guide leaflet.
+dlxs title: Guide leaflet.  [Vol. 72]
+
+fuzz score: 100
+alma title: Guide leaflet.
+dlxs title: Guide leaflet.  [Vol. 73]
+
+fuzz score: 100
+alma title: Guide leaflet.
+dlxs title: Guide leaflet.  [Vol. 74]
+
+fuzz score: 100
+alma title: Guide leaflet.
+dlxs title: Guide leaflet.  [Vol. 75]
+
+fuzz score: 100
+alma title: Guide leaflet.
+dlxs title: Guide leaflet.  [Vol. 76]
+
+fuzz score: 100
+alma title: Guide leaflet.
+dlxs title: Guide leaflet.  [Vol. 77]
+
+fuzz score: 100
+alma title: Guide leaflet.
+dlxs title: Guide leaflet.  [Vol. 78]
+
+fuzz score: 100
+alma title: Guide leaflet.
+dlxs title: Guide leaflet.  [Vol. 80]
+
+fuzz score: 100
+alma title: Guide leaflet.
+dlxs title: Guide leaflet.  [Vol. 81]
+
+fuzz score: 100
+alma title: Guide leaflet.
+dlxs title: Guide leaflet.  [Vol. 83]
+
+fuzz score: 100
+alma title: Report of the acting president.
+dlxs title: Report of the acting president. [1922]
+
+fuzz score: 100
+alma title: Report of the acting president.
+dlxs title: Report of the acting president. [1923]
+
+fuzz score: 100
+alma title: Report of the president & of the treasurer.
+dlxs title: Report of the president & of the treasurer. [1924]
+
+fuzz score: 100
+alma title: Report of the president & of the treasurer.
+dlxs title: Report of the president & of the treasurer. [1925]
+
+fuzz score: 100
+alma title: Report of the president & of the treasurer.
+dlxs title: Report of the president & of the treasurer. [1926]
+
+fuzz score: 100
+alma title: Report of the president & of the treasurer.
+dlxs title: Report of the president & of the treasurer. [1927]
+
+fuzz score: 100
+alma title: Report of the president & of the treasurer.
+dlxs title: Report of the president & of the treasurer. [1928]
+
+fuzz score: 100
+alma title: Report of the president & of the treasurer.
+dlxs title: Report of the president & of the treasurer. [1929]
+
+fuzz score: 100
+alma title: Report of the president & of the treasurer.
+dlxs title: Report of the president & of the treasurer. [1930]
+
+fuzz score: 100
+alma title: Report of the president & of the treasurer.
+dlxs title: Report of the president & of the treasurer. [1931]
+
+fuzz score: 100
+alma title: Report of the president & of the treasurer.
+dlxs title: Report of the president & of the treasurer. [1932]
+
+fuzz score: 100
+alma title: Crooks of the Waldorf, : being the story of Joe Smith, master detective, /
+dlxs title: Crooks of the Waldorf, : being the story of Joe Smith, master detective, / by Horace Smith.
+
+fuzz score: 100
+alma title: Port of New York annual.
+dlxs title: Port of New York annual.
+
+fuzz score: 100
+alma title: Port of New York annual.
+dlxs title: Port of New York annual.
+
+fuzz score: 100
+alma title: The first hundred years.
+dlxs title: The first hundred years.
+
+fuzz score: 100
+alma title: Italian women in industry : a study of conditions in New York City /
+dlxs title: Italian women in industry : a study of conditions in New York City / by Louise C. Odencrantz.
+
+fuzz score: 100
+alma title: Report of the State board of housing to Governor Alfred E. Smith and to the Legislature of the state of New York.
+dlxs title: Report of the State board of housing to Governor Alfred E. Smith and to the Legislature of the state of New York.
+
+fuzz score: 100
+alma title: Report of Commission of housing and regional planning to Governor Alfred E. Smith and to the Legislature of the state of New York on the present status of the housing emergency.
+dlxs title: Report of Commission of housing and regional planning to Governor Alfred E. Smith and to the Legislature of the state of New York on the present status of the housing emergency.
+
+fuzz score: 100
+alma title: The longshoremen; a study carried on under the direction of Pauline Goldmark.
+dlxs title: The longshoremen; a study carried on under the direction of Pauline Goldmark.
+
+fuzz score: 100
+alma title: Fourth report of the Factory investigating commission, 1915 : transmitted to the Legislature February 15, 1915.
+dlxs title: Fourth report of the Factory investigating commission, 1915 : transmitted to the Legislature February 15, 1915.
+
+fuzz score: 100
+alma title: Fourth report of the Factory investigating commission, 1915 : transmitted to the Legislature February 15, 1915.
+dlxs title: Fourth report of the Factory investigating commission, 1915 : transmitted to the Legislature February 15, 1915.
+
+fuzz score: 100
+alma title: Fourth report of the Factory investigating commission, 1915 : transmitted to the Legislature February 15, 1915.
+dlxs title: Fourth report of the Factory investigating commission, 1915 : transmitted to the Legislature February 15, 1915.
+
+fuzz score: 100
+alma title: Fourth report of the Factory investigating commission, 1915 : transmitted to the Legislature February 15, 1915.
+dlxs title: Fourth report of the Factory investigating commission, 1915 : transmitted to the Legislature February 15, 1915.
+
+fuzz score: 100
+alma title: Fourth report of the Factory investigating commission, 1915 : transmitted to the Legislature February 15, 1915.
+dlxs title: Fourth report of the Factory investigating commission, 1915 : transmitted to the Legislature February 15, 1915.
+
+fuzz score: 100
+alma title: The post-war expansion of state expenditures; an analysis of the increase between 1917 ad 1923 in the cost of state government in New York,
+dlxs title: The post-war expansion of state expenditures; an analysis of the increase between 1917 ad 1923 in the cost of state government in New York,
+
+fuzz score: 100
+alma title: Preliminary report of the Factory investigating commission, 1912 ...
+dlxs title: Preliminary report of the Factory investigating commission, 1912 ...
+
+fuzz score: 100
+alma title: Preliminary report of the Factory investigating commission, 1912 ...
+dlxs title: Preliminary report of the Factory investigating commission, 1912 ...
+
+fuzz score: 100
+alma title: Preliminary report of the Factory investigating commission, 1912 ...
+dlxs title: Preliminary report of the Factory investigating commission, 1912 ...
+
+fuzz score: 100
+alma title: Old roads from the heart of New York : journeys today by ways of yesterday, within thirty miles around the Battery /
+dlxs title: Old roads from the heart of New York : journeys today by ways of yesterday, within thirty miles around the Battery / by Sarah Comstock. With illustrations by the author and others.
+
+fuzz score: 100
+alma title: Highway traffic in New York and its environs : including a program, by Nelson P. Lewis, for a study of all communication facilities within the area /
+dlxs title: Highway traffic in New York and its environs : including a program, by Nelson P. Lewis, for a study of all communication facilities within the area / by Harold M. Lewis ; in collaboration with Ernest P. Goodrich.
+
+fuzz score: 100
+alma title: Highway traffic in New York and its environs : including a program, by Nelson P. Lewis, for a study of all communication facilities within the area /
+dlxs title: Highway traffic in New York and its environs : including a program, by Nelson P. Lewis, for a study of all communication facilities within the area / by Harold M. Lewis ; in collaboration with Ernest P. Goodrich.
+
+fuzz score: 100
+alma title: Le port de New-York dans son rôle économique.
+dlxs title: Le port de New-York dans son rôle économique.
+
+fuzz score: 100
+alma title: Fifty years of rapid transit, 1864-1917 /
+dlxs title: Fifty years of rapid transit, 1864-1917 / by James Blaine Walker.
+
+fuzz score: 100
+alma title: Special assessment procedure, a critical study of the methods and practices in improvement finance in twenty-one New York cities,
+dlxs title: Special assessment procedure, a critical study of the methods and practices in improvement finance in twenty-one New York cities,
+
+fuzz score: 100
+alma title: West Side studies, carried on under the direction of Pauline Goldmark ...
+dlxs title: West Side studies, carried on under the direction of Pauline Goldmark ...
+
+fuzz score: 100
+alma title: West Side studies, carried on under the direction of Pauline Goldmark ...
+dlxs title: West Side studies, carried on under the direction of Pauline Goldmark ...
+
+fuzz score: 100
+alma title: Specialized courts dealing with sex delinquency; a study of the procedure in Chicago, Boston, Philadelphia and New York,
+dlxs title: Specialized courts dealing with sex delinquency; a study of the procedure in Chicago, Boston, Philadelphia and New York, by George E. Worthington and Ruth Topping.
+
+fuzz score: 100
+alma title: The literary history of the American revolution, 1763-1783.
+dlxs title: The literary history of the American revolution, 1763-1783. By Moses Coit Tyler ...
+
+fuzz score: 100
+alma title: The literary history of the American revolution, 1763-1783.
+dlxs title: The literary history of the American revolution, 1763-1783. By Moses Coit Tyler ...
+
+fuzz score: 100
+alma title: The story of two famous hatters,
+dlxs title: The story of two famous hatters,
+
+fuzz score: 100
+alma title: The Lancasterian system of instruction in the schools of New York city,
+dlxs title: The Lancasterian system of instruction in the schools of New York city,
+
+fuzz score: 100
+alma title: The story of an epoch-making movement /
+dlxs title: The story of an epoch-making movement /
+
+fuzz score: 100
+alma title: The beginnings of the New York central railroad; a history,
+dlxs title: The beginnings of the New York central railroad; a history, by Frank Walker Stevens.
+
+fuzz score: 100
+alma title: A century of banking in New York, 1822-1922 /
+dlxs title: A century of banking in New York, 1822-1922 / by Henry Wysham Lanier.
+
+fuzz score: 100
+alma title: Neighbors : life stories of the other half /
+dlxs title: Neighbors : life stories of the other half / by Jacob A. Riis.
+
+fuzz score: 100
+alma title: The house on Henry Street /
+dlxs title: The house on Henry Street /
+
+fuzz score: 100
+alma title: The nether side of New York; or, The vice, crime and poverty of the great metropolis.
+dlxs title: The nether side of New York; or, The vice, crime and poverty of the great metropolis.
+
+fuzz score: 100
+alma title: Police administration in New York, Chicago and Philadelphia,
+dlxs title: Police administration in New York, Chicago and Philadelphia,
+
+fuzz score: 100
+alma title: Our police guardians : history of the Police department of the city of New York, and the policing of same for the past one hundred years ... /
+dlxs title: Our police guardians : history of the Police department of the city of New York, and the policing of same for the past one hundred years ... / compiled and written by officer "787", John J. Hickey, retired.
+
+fuzz score: 99
+alma title: Annual report of the Children's court of the city of New York [1924-1932.].
+dlxs title: Annual report of the Children's court of the city of New York [1924-1932.] [1924]
+
+fuzz score: 99
+alma title: Annual report of the Children's court of the city of New York [1924-1932.].
+dlxs title: Annual report of the Children's court of the city of New York [1924-1932.] [1925]
+
+fuzz score: 99
+alma title: Annual report of the Children's court of the city of New York [1924-1932.].
+dlxs title: Annual report of the Children's court of the city of New York [1924-1932.] [1926]
+
+fuzz score: 99
+alma title: Annual report of the Children's court of the city of New York [1924-1932.].
+dlxs title: Annual report of the Children's court of the city of New York [1924-1932.] [1927]
+
+fuzz score: 99
+alma title: Annual report of the Children's court of the city of New York [1924-1932.].
+dlxs title: Annual report of the Children's court of the city of New York [1924-1932.] [1928]
+
+fuzz score: 99
+alma title: Annual report of the Children's court of the city of New York [1924-1932.].
+dlxs title: Annual report of the Children's court of the city of New York [1924-1932.] [1929]
+
+fuzz score: 99
+alma title: Annual report of the Children's court of the city of New York [1924-1932.].
+dlxs title: Annual report of the Children's court of the city of New York [1924-1932.] [1930]
+
+fuzz score: 99
+alma title: Annual report of the Children's court of the city of New York [1924-1932.].
+dlxs title: Annual report of the Children's court of the city of New York [1924-1932.] [1931]
+
+fuzz score: 99
+alma title: Annual report of the Children's court of the city of New York [1924-1932.].
+dlxs title: Annual report of the Children's court of the city of New York [1924-1932.] [1932]
+
+fuzz score: 100
+alma title: The Supreme court of the United States: its history,
+dlxs title: The Supreme court of the United States: its history, by Hampton L. Carson and its centennial celebration, February 4th, 1890. Prepared under direction of the Judiciary centennial committee.
+
+fuzz score: 100
+alma title: The federal and state constitutions, colonial charters, and other organic laws of the United States ...
+dlxs title: The federal and state constitutions, colonial charters, and other organic laws of the United States ... Comp. under an order of the United States Senate by Ben: Perley Poore ...
+
+fuzz score: 100
+alma title: The federal and state constitutions, colonial charters, and other organic laws of the United States ...
+dlxs title: The federal and state constitutions, colonial charters, and other organic laws of the United States ... Comp. under an order of the United States Senate by Ben: Perley Poore ...
+
+fuzz score: 100
+alma title: Treaties, their making and enforcement /
+dlxs title: Treaties, their making and enforcement / by Samuel B. Crandall.
+
+fuzz score: 100
+alma title: The house of Harper : a century of publishing in Franklin Square /
+dlxs title: The house of Harper : a century of publishing in Franklin Square / by J. Henry Harper.
+
+fuzz score: 100
+alma title: Early library development in New York state <1800-1900> /
+dlxs title: Early library development in New York state <1800-1900> / by George Watson Cole.
+
+fuzz score: 100
+alma title: Recollections of Mr. James Lenox of New York and the formation of his library,
+dlxs title: Recollections of Mr. James Lenox of New York and the formation of his library,
+
+fuzz score: 100
+alma title: The early German theatre in New York, 1840-1872,
+dlxs title: The early German theatre in New York, 1840-1872,
+
+fuzz score: 97
+alma title: History of New York state, 1523-1927.
+dlxs title: History of New York state, 1523-1927,  [Vol. 1]
+
+fuzz score: 97
+alma title: History of New York state, 1523-1927.
+dlxs title: History of New York state, 1523-1927,  [Vol. 2]
+
+fuzz score: 97
+alma title: History of New York state, 1523-1927.
+dlxs title: History of New York state, 1523-1927,  [Vol. 3]
+
+fuzz score: 97
+alma title: History of New York state, 1523-1927.
+dlxs title: History of New York state, 1523-1927,  [Vol. 4]
+
+fuzz score: 97
+alma title: History of New York state, 1523-1927.
+dlxs title: History of New York state, 1523-1927,  [Vol. 5]
+
+fuzz score: 97
+alma title: History of New York state, 1523-1927.
+dlxs title: History of New York state, 1523-1927,  [Vol. 6]
+
+fuzz score: 100
+alma title: The new New York; a commentary on the place and the people,
+dlxs title: The new New York; a commentary on the place and the people,
+
+fuzz score: 100
+alma title: Who's who of the Chinese in New York /
+dlxs title: Who's who of the Chinese in New York / by Warner M. Van Norden.
+
+fuzz score: 100
+alma title: Children in the Nursery school,
+dlxs title: Children in the Nursery school,
+
+fuzz score: 100
+alma title: The life & public services of Simon Sterne.
+dlxs title: The life & public services of Simon Sterne.
+
+fuzz score: 100
+alma title: An industrial calendar,
+dlxs title: An industrial calendar, by Katharine Treat.
+
+fuzz score: 100
+alma title: Report of Commission of housing and regional planning to Governor Alfred E. Smith and to the legislature ... on cost of government, land value and population; with An analysis of the cost of municipal and state government and the relation of population to cost of government, income and land values in New York state,
+dlxs title: Report of Commission of housing and regional planning to Governor Alfred E. Smith and to the legislature ... on cost of government, land value and population; with An analysis of the cost of municipal and state government and the relation of population to cost of government, income and land values in New York state, by Donald H. Davenport. January 11, 1926.
+
+fuzz score: 100
+alma title: Report of the Tenement House Committee as authorized by chapter 479 of the Laws of 1894. Transmitted to the Legislature January 17, 1895.
+dlxs title: Report of the Tenement House Committee as authorized by chapter 479 of the Laws of 1894. Transmitted to the Legislature January 17, 1895.
+
+fuzz score: 100
+alma title: Interborough rapid transit company against William Green, et al. Brief for defendants,
+dlxs title: Interborough rapid transit company against William Green, et al. Brief for defendants, with a foreword by William Green, president American federation of labor.
+
+fuzz score: 100
+alma title: Preliminary report of the State board of housing to Governor Alfred E. Smith. December 15, 1926.
+dlxs title: Preliminary report of the State board of housing to Governor Alfred E. Smith. December 15, 1926.
+
+fuzz score: 100
+alma title: Josiah Allen's wife as a P.A. and P.I. Samantha at the Centennial. Designed as a bright and shining light, to pierce the fogs of error and injustice that surround society and Josiah, and to bring more clearly to view the path that leads straight on to virtue and happiness.
+dlxs title: Josiah Allen's wife as a P.A. and P.I. Samantha at the Centennial. Designed as a bright and shining light, to pierce the fogs of error and injustice that surround society and Josiah, and to bring more clearly to view the path that leads straight on to virtue and happiness. By the author of "My opinions and Betsey Bobbet's" ...
+
+fuzz score: 100
+alma title: Working girls in evening schools : a statistical study /
+dlxs title: Working girls in evening schools : a statistical study / by Mary Van Kleeck.
+
+fuzz score: 100
+alma title: Henry Mitchell Mac Cracken : in memoriam.
+dlxs title: Henry Mitchell Mac Cracken : in memoriam.
+
+fuzz score: 100
+alma title: Second report of the Factory investigating commission, 1913 ...
+dlxs title: Second report of the Factory investigating commission, 1913 ...
+
+fuzz score: 100
+alma title: Second report of the Factory investigating commission, 1913 ...
+dlxs title: Second report of the Factory investigating commission, 1913 ...
+
+fuzz score: 100
+alma title: Second report of the Factory investigating commission, 1913 ...
+dlxs title: Second report of the Factory investigating commission, 1913 ...
+
+fuzz score: 98
+alma title: The Eno collection of New York city views.
+dlxs title: The Eno collection of New York city views,
+
+fuzz score: 99
+alma title: Public recreation : a study of parks, playgrounds and other outdoor recreation facilities ...
+dlxs title: Public recreation: a study of parks, playgrounds and other outdoor recreation facilities ...
+
+fuzz score: 100
+alma title: Education and the summer camp; an experiment,
+dlxs title: Education and the summer camp; an experiment, by Lloyd Burgess Sharp.
+
+fuzz score: 95
+alma title: Special report to His Excellency Alfred E. Smith, Governor of the State of New York : The New York State Barge Canal /
+dlxs title: Special report to His Excellency Alfred E. Smith, governor of the state of New York. The New York state Barge canal.
+
+fuzz score: 100
+alma title: Special report on diseases of the horse.
+dlxs title: Special report on diseases of the horse.
+
+fuzz score: 98
+alma title: Early days of the Presbyterian hospital in the city of New York /
+dlxs title: Early days of the Presbyterian hospital in the city of New York, by David Bryson Delavan ... with 34 full page illustrations.
+
+fuzz score: 100
+alma title: Night scenes of city life ...
+dlxs title: Night scenes of city life ...
+
+fuzz score: 100
+alma title: The crime laws advocated by the Crime commission of New York state, 1928.
+dlxs title: The crime laws advocated by the Crime commission of New York state, 1928.
+
+fuzz score: 100
+alma title: The sociology of a New York city block,
+dlxs title: The sociology of a New York city block, by Thomas Jesse Jones.
+
+fuzz score: 96
+alma title: Pre-Malthusian doctrines of population : a study in the history of economic theory /
+dlxs title: Pre-Malthusian doctrines of population; a study in the history of economic theory, by Charles Emil Stangeland.
+
+fuzz score: 100
+alma title: A check list of books, maps, pictures, and other printed matter relating to the counties of Westchester and Bronx,
+dlxs title: A check list of books, maps, pictures, and other printed matter relating to the counties of Westchester and Bronx,
+
+fuzz score: 100
+alma title: Local laws of the cities in the state of New York enacted during the year ...
+dlxs title: Local laws of the cities in the state of New York enacted during the year ... [1924]
+
+fuzz score: 100
+alma title: Local laws of the cities in the state of New York enacted during the year ...
+dlxs title: Local laws of the cities in the state of New York enacted during the year ... [1925]
+
+fuzz score: 100
+alma title: The work of the stock exchange,
+dlxs title: The work of the stock exchange,
+
+fuzz score: 100
+alma title: Public opinion and popular government,
+dlxs title: Public opinion and popular government, by A. Lawrence Lowell ...
+
+fuzz score: 100
+alma title: Survey of the Queens Borough public library ... to aid the Board of estimate and apportionment to determine upon a library policy.
+dlxs title: Survey of the Queens Borough public library ... to aid the Board of estimate and apportionment to determine upon a library policy. Authorized by the Board of trustees.
+
+fuzz score: 97
+alma title: Michigan's favorite college songs /
+dlxs title: Michigan's favorite college songs, edited by Roy Dickinson Welch, 1909, and Earl Vincent Moore, 1912 [compiled by Mrs. Minnie Maes Root]
+
+fuzz score: 100
+alma title: New York.
+dlxs title: New York.
+
+fuzz score: 100
+alma title: The Jewish communal register of New York city, 1917-1918 ...
+dlxs title: The Jewish communal register of New York city, 1917-1918 ...
+
+fuzz score: 100
+alma title: Creative youth; how a school environment set free the creative spirit,
+dlxs title: Creative youth; how a school environment set free the creative spirit, by Hughes Mearns, with a foreword by Otis W. Caldwell and an anthology of the high school verse.
+
+fuzz score: 95
+alma title: Our album of authors, : a cyclopedia of popular literary people, /
+dlxs title: Our album of authors, a cyclopedia of popular literary people, by Frank M'Alpine ...
+
+fuzz score: 100
+alma title: Out of Egypt into Canaan; or, Lessons in spiritual geography.
+dlxs title: Out of Egypt into Canaan; or, Lessons in spiritual geography. By Martin Wells Knapp ...
+
+fuzz score: 100
+alma title: Experimental classes for adult education; a report of the extension activities of the People's institute of New York,
+dlxs title: Experimental classes for adult education; a report of the extension activities of the People's institute of New York, by Philip N. Youtz, with an introduction by Everett Dean Martin ...
+
+fuzz score: 100
+alma title: Guide to the New York aquarium.
+dlxs title: Guide to the New York aquarium.
+
+fuzz score: 100
+alma title: The Lafferty plan: transit, traffic, freight; a comprehensive true transportation system of airways and speedways for large cities.
+dlxs title: The Lafferty plan: transit, traffic, freight; a comprehensive true transportation system of airways and speedways for large cities.
+
+fuzz score: 99
+alma title: Proposed health districts, New York City. Statistical reference data : district populations, school children; births; tuberculosis and contagion registration; local mortality /
+dlxs title: Proposed health districts, New York City. Statistical reference data: district populations, school children; births; tuberculosis and contagion registration; local mortality. Compiled by Godias J. Drolet and Marguerite P. Potter. Committee on Neighborhood Health Development, Kenneth D. Widdemer, director. March, 1930.
+
+fuzz score: 100
+alma title: Nostrand's indexed Queens house number map
+dlxs title: Nostrand's indexed Queens house number map:  Geo. J. Nostrand ; Norman Gugler.
+
+fuzz score: 100
+alma title: Nostrand's indexed Brooklyn house number map
+dlxs title: Nostrand's indexed Brooklyn house number map: 
+
+fuzz score: 100
+alma title: New clinics for old : a study of clinics unattached to hospitals in New York city : the passing of the old "dispensary" and the rise of health centers and of other clinics rendering health services /
+dlxs title: New clinics for old : a study of clinics unattached to hospitals in New York city : the passing of the old "dispensary" and the rise of health centers and of other clinics rendering health services / by Michael M. Davis and Anna Mann Richardson.
+
+fuzz score: 100
+alma title: Alice Foote MacDougall; the autobiography of a business woman ...
+dlxs title: Alice Foote MacDougall; the autobiography of a business woman ...
+
+fuzz score: 100
+alma title: The Queens Borough Public Library presents to the people of Queens Borough the Pioneer.
+dlxs title: The Queens Borough Public Library presents to the people of Queens Borough the Pioneer.
+
+fuzz score: 100
+alma title: Messages of the governors of Michigan.
+dlxs title: Messages of the governors of Michigan. Ed. by George N. Fuller.
+
+fuzz score: 100
+alma title: Messages of the governors of Michigan.
+dlxs title: Messages of the governors of Michigan. Ed. by George N. Fuller.
+
+fuzz score: 100
+alma title: Messages of the governors of Michigan.
+dlxs title: Messages of the governors of Michigan. Ed. by George N. Fuller.
+
+fuzz score: 100
+alma title: Messages of the governors of Michigan.
+dlxs title: Messages of the governors of Michigan. Ed. by George N. Fuller.
+
+fuzz score: 100
+alma title: Our despotic postal censorship /
+dlxs title: Our despotic postal censorship / Louis F. Post ...
+
+fuzz score: 100
+alma title: Home study courses in library service.
+dlxs title: Home study courses in library service.
+
+fuzz score: 98
+alma title: The women of New York, or, The under-world of the great city. : Illustrating the life of women of fashion, women of pleasure, actresses and ballet girls, saloon girls, pickpockets and shoplifters, artists' female models, women-of-the-town, etc., etc., etc. /
+dlxs title: The women of New York; or, The under-world of the great city. Illustrating the life of women of fashion, women of pleasure, actresses and ballet girls, saloon girls, pickpockets and shoplifters, artists' female models, women-of-the-town, etc. ...
+
+fuzz score: 100
+alma title: New York illustrated : presented to members of the National Division, Sons of Temperance of North America, by the Grand Division of Eastern New York at the 29th annual session, New York City, June 18, 1873 /
+dlxs title: New York illustrated : presented to members of the National Division, Sons of Temperance of North America, by the Grand Division of Eastern New York at the 29th annual session, New York City, June 18, 1873 / J.N. Stearns ... [et al.], committee.
+
+fuzz score: 100
+alma title: Shepp's New York City illustrated : scene and story in the metropolis of the Western world : how two million people live and die, work and play, eat and sleep, govern themselves and break the laws, win fortunes and lose them, and so build and maintain the New York of to-day /cJames W. Shepp and Daniel B. Shepp ...
+dlxs title: Shepp's New York City illustrated : scene and story in the metropolis of the Western world : how two million people live and die, work and play, eat and sleep, govern themselves and break the laws, win fortunes and lose them, and so build and maintain the New York of to-day /cJames W. Shepp and Daniel B. Shepp ...
+
+fuzz score: 100
+alma title: New York's Chinatown : an historical presentation of its people and places /
+dlxs title: New York's Chinatown : an historical presentation of its people and places / by Louis J. Beck.
+
+fuzz score: 100
+alma title: The old merchants of New York City /
+dlxs title: The old merchants of New York City / by Walter Barrett.
+
+fuzz score: 100
+alma title: The old merchants of New York City /
+dlxs title: The old merchants of New York City / by Walter Barrett.
+
+fuzz score: 100
+alma title: The old merchants of New York City /
+dlxs title: The old merchants of New York City / by Walter Barrett.
+
+fuzz score: 100
+alma title: The old merchants of New York City /
+dlxs title: The old merchants of New York City / by Walter Barrett.
+
+fuzz score: 100
+alma title: The old merchants of New York City /
+dlxs title: The old merchants of New York City / by Walter Barrett.
+
+fuzz score: 100
+alma title: The life and times of John Kelly, tribune of the people /
+dlxs title: The life and times of John Kelly, tribune of the people / by J. Fairfax McLaughlin.
+
+fuzz score: 100
+alma title: Panorama of New York, Brooklyn, and vicinity.
+dlxs title: Panorama of New York, Brooklyn, and vicinity.
+
+fuzz score: 99
+alma title: Illustrated guide to New York. : Compliments of Hotel Jefferson, New York, 102-104-106 East Fifteenth street, one door east of Union Square. John E. Chatfield, proprietor.
+dlxs title: Illustrated guide to New York. Compliments of Hotel Jefferson, New York, 102-104-106 East Fifteenth street, one door east of Union Square. John E. Chatfield, proprietor.
+
+fuzz score: 100
+alma title: New York sketches /
+dlxs title: New York sketches / by Jesse Lynch Williams.
+
+fuzz score: 100
+alma title: Reminiscences of Abraham Lincoln by distinguished men of his time /
+dlxs title: Reminiscences of Abraham Lincoln by distinguished men of his time / collected and edited by Allen Thorndike Rice.
+
+fuzz score: 100
+alma title: Special report on diseases of the horse /
+dlxs title: Special report on diseases of the horse / by Pearson ... [et al.].
+
+fuzz score: 100
+alma title: The story of my life ; or, The sunshine and shadow of seventy years /
+dlxs title: The story of my life ; or, The sunshine and shadow of seventy years / by Mary A. Livermore ... with hitherto unrecorded incidents and recollections of three years' experience as an army nurse in the great Civil War, and reminiscences of twenty-five years' experiences on the lecture platform ... to which is added six of her most popular lectures ... with portraits and one hundred and twenty engravings from designs by eminent artists ...
+
+fuzz score: 100
+alma title: Oregon Trail : Sketches of Prairie and Rocky Mountain Life.
+dlxs title: Oregon Trail : Sketches of Prairie and Rocky Mountain Life.
+
+fuzz score: 100
+alma title: Landmarks of Wayne County and Detroit.
+dlxs title: Landmarks of Wayne County and Detroit.
+
+fuzz score: 100
+alma title: A History of real estate, building, and architecture in New York City during the last quarter of a century
+dlxs title: A History of real estate, building, and architecture in New York City during the last quarter of a century
+
+fuzz score: 93
+alma title: Success in Life the artist/
+dlxs title: Success in Life:  the artist/ by Mrs. L. C. Tuthill.
