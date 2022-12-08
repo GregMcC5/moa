@@ -1,6 +1,7 @@
 import csv
 import json
 import os
+
 #--------------------------------------------
 
 def read_csv(filepath, encoding='utf-8', newline='', delimiter=','):
@@ -117,9 +118,3 @@ def read_file(filepath):
 
   return data
 
-
-def string_to_list(string):
-    return json.loads(string)
-
-my_string = "['x','y,']"
-print(string_to_list(my_string))
