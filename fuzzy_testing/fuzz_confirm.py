@@ -8,9 +8,6 @@ passed_records = mu.read_file("passed.csv")
 
 fail_counter = 0
 
-# print([x["dlps_id"] for x in tpg_content], "\n,\n")
-# print([x["dlps_id"] for x in tpg_content])
-
 
 tpg_ids = [x["dlps_id"] for x in tpg_content]
 
@@ -36,7 +33,6 @@ for record in passed_records[1:]:
                 print(top_score)
 
 
-        # tpg_ocr = [[val if 'tpg' in key else None for key,val in x.items()] for x in tpg_content if x["dlps_id"] == record[1]]
 print(fail_counter)
 print("done")
 
