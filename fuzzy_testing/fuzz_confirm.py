@@ -28,7 +28,7 @@ for record in passed_records[1:]:
             if len(match.keys()) > 2:
                 #ocr_content = {key : val for key,val in match.items() if "tpg" in key}
                 for key, val in {key : val for key,val in match.items() if "tpg" in key}.items():
-                    scores.append([fuzz.partial_ratio(record[3], val), key, val])
+                    scores.append([fuzz.partial_ratio(record[3].lower(), val.lower()), key, val])
                 top_score = sorted(scores,key=lambda x:x[0], reverse=True)[0]
                 if record[1] == "ABK8873.0006.001":
                     print(top_score, record[3])
@@ -42,6 +42,7 @@ print("fuzz_test example:", fuzz.partial_ratio("American history,", "\nI LLU STR
 
 print("done")
 
+#I'm tweaking away at some of the code here to try to find what the best approach is here, and where perhaps the best Threshold might be.
 
 # First Round of Fuzz Results (using .strip() and .lower()):
 #   - 100   : 101
@@ -68,3 +69,27 @@ print("done")
 #   - 29-20 : 2557
 #   - 19-10 : 2688
 #   -  9-0  : 51
+
+# Third Round of Fuzz Results (using .lower(), but not .strip()):
+#   - 100   : 101
+#   - 99-90 : 3075
+#   - 89-80 : 2618
+#   - 79-70 : 917
+#   - 69-60 : 615
+#   - 59-50 : 325
+#   - 49-40 : 345
+#   - 39-30 : 123
+#   - 29-20 : 41
+#   - 19-10 : 15
+#   -  9-0  : 20
+
+#Notes:
+# I'm realizing that using .strip() doesn't make a difference as I'm using the fuzz.partial_ration() function that uses substring, rather than full strings.
+# Using .lower() seems to make it too permissive, giving higher scores for string that ought not match:
+#
+# Example:
+# Metadata Title: American history,
+# OCR content: '\nI LLU STRATED\nWITIH NUMEROUS MAPS AND ENGRAVINGS.\nREVO)iT oiI     THO E c[ ) GLO)N IES.\nN~~~~ )2~or~~~:.\n2l\n~odu; o    &inc\n\n\n\n'
+#
+# Fuzz Score: 41 when using .lower()
+# The title is correct, but the OCR string really shouldn't be matching that highly with the Metadata string; they're fully different
