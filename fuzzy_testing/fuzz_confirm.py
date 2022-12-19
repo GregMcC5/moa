@@ -23,7 +23,8 @@ re_ocr_success = []
 
 tpg_ids = [x["dlps_id"] for x in tpg_content]
 
-#comparing it with current OCR contetn
+#-Round 1 Check
+#comparing it with current OCR content
 for record in passed_records[1:]:
     if record[1] in tpg_ids:
         record_scores = []
@@ -41,48 +42,49 @@ for record in passed_records[1:]:
                 page = selection.split("||")[0]
                 ocr = selection.split("||")[1]
                 # #-Doing some testing
-                if record[1] == "AAM9795.0001.001":
+                if record[1] == "ABJ6037.0001.001":
                     print(f'''
                     score: {score}
                     title: {record[3]}
                     page : {page}
                     ocr : {ocr}
                     ''')
-                # #-appending to a text file
-                # with open("fuzz_output.txt", 'a') as file:
-                #     file.write(f"{record[3]}\nfuzz score: {score}, title page index:? {page}\nid: {record[1]}\n\n")
-                #-checking score, appending
-                if score > THRESHOLD:
-                    passed_first.append(record)
-                    first_round_passed_counter += 1
-                elif score < THRESHOLD:
-                    first_round_fail_counter += 1
-                    #-write filenames
-                    root = record[1]
-                    path = f"/n1/obj/{root[0]}/{root[1]}/{root[2]}/{root}/{page.strip('tpg - ')}.tif"
-                    full_paths.append(path)
-                    with open("need_filepathes.txt", 'a') as file:
-                        file.write(path + "\n")
-                    #-check for filepath, do re-OCR
-                    #note: moa_reocr_images.nosync is, at the moment, stale data, from an earlier, will replace once ready
-                    img_files = os.listdir("moa_reocr_images.nosync")
-                    img_path = root.lower() + "-" + page.strip("tpg - ")+".tif"
-                    if img_path in img_files:
-                        print(img_path)
-                        # try:
-                        new_score = process.extractOne(record[3],[pyt.image_to_string("moa_reocr_images.nosync/" + img_path)], scorer=fuzz.partial_ratio)[1]
-                        print("extracted")
-                        if new_score > THRESHOLD:
-                            print("new pass!")
-                            re_ocr_success.append(record)
-                            second_round_pass_counter += 1
-                        elif new_score < THRESHOLD:
-                            second_round_fail_counter += 1
-                        # except:
-                        #     pass
-                    else:
-                        print("not in there")
-                        not_in_there += 1
+                # # #-appending to a text file
+                # # with open("fuzz_output.txt", 'a') as file:
+                # #     file.write(f"{record[3]}\nfuzz score: {score}, title page index:? {page}\nid: {record[1]}\n\n")
+                # #-checking score, appending
+                # if score > THRESHOLD:
+                #     passed_first.append(record) # to be added to confirmed
+                #     first_round_passed_counter += 1
+                # elif score < THRESHOLD:
+                # #-Round 2 Check
+                #     first_round_fail_counter += 1
+                #     #-write filenames
+                #     root = record[1]
+                #     path = f"/n1/obj/{root[0]}/{root[1]}/{root[2]}/{root}/{page.strip('tpg - ')}.tif"
+                #     full_paths.append(path)
+                #     with open("need_filepathes.txt", 'a') as file:
+                #         file.write(path + "\n")
+                #     #-check for filepath, do re-OCR
+                #     #note: moa_reocr_images.nosync is, at the moment, stale data, from an earlier, will replace once ready
+                #     img_files = os.listdir("moa_reocr_images.nosync")
+                #     img_path = root.lower() + "-" + page.strip("tpg - ")+".tif"
+                #     if img_path in img_files:
+                #         print(img_path)
+                #         # try:
+                #         new_score = process.extractOne(record[3],[pyt.image_to_string("moa_reocr_images.nosync/" + img_path)], scorer=fuzz.partial_ratio)[1]
+                #         print("extracted")
+                #         if new_score > THRESHOLD:
+                #             print("new pass!")
+                #             re_ocr_success.append(record) #to be added to Confrimed
+                #             second_round_pass_counter += 1
+                #         elif new_score < THRESHOLD:
+                #             second_round_fail_counter += 1 #to be manually reviewed
+                #         # except:
+                #         #     pass
+                #     else:
+                #         print("not in there")
+                #         not_in_there += 1
 
 
 
