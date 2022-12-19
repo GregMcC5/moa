@@ -36,7 +36,7 @@ for record in passed_records[1:]:
                 page = selection.split("||")[0]
                 ocr = selection.split("||")[1]
                 # #-Doing some testing
-                if record[1] == "AAF1187.1843.001":
+                if record[1] == "AAM9795.0001.001":
                     print(f'''
                     score: {score}
                     title: {record[3]}
@@ -44,24 +44,30 @@ for record in passed_records[1:]:
                     ocr : {ocr}
                     ''')
                 # #-appending to a text file
-                with open("fuzz_output.txt", 'a') as file:
-                    file.write(f"{record[3]}\nfuzz score: {score}, title page index:? {page}\nid: {record[1]}\n\n")
-                # #-checking score, appending
-                # if score > THRESHOLD:
-                #     passed_first.append(record)
-                # elif score < THRESHOLD:
-                #     fail_counter += 1
-                    # #-write filenames
-                    # root = record[1]
-                    # path = f"/n1/obj/{root[0]}/{root[1]}/{root[2]}/{root}/{page.strip('tpg - ')}.tif"
-                    # full_paths.append(path)
-                    # #-check for filepath, do re-OCR
-                    # img_files = os.listdir("moa_images")
-                    # if path in img_files:
-                    #     if process.extractOne(record[3],[pyt.image_to_string(path)], scorer=fuzz.partial_ratio)[1] > THRESHOLD:
-                    #         re_ocr_success.append(record)
-                    #     else:
-                    #         print("still a problem")
+                # with open("fuzz_output.txt", 'a') as file:
+                #     file.write(f"{record[3]}\nfuzz score: {score}, title page index:? {page}\nid: {record[1]}\n\n")
+                #-checking score, appending
+                if score > THRESHOLD:
+                    passed_first.append(record)
+                elif score < THRESHOLD:
+                    fail_counter += 1
+                    #-write filenames
+                    root = record[1]
+                    path = f"/n1/obj/{root[0]}/{root[1]}/{root[2]}/{root}/{page.strip('tpg - ')}.tif"
+                    full_paths.append(path)
+                    #-check for filepath, do re-OCR
+                    img_files = os.listdir("moa_reocr_images.nosync")
+                    img_path = root.lower() + "-" + page.strip("tpg - ")+".tif"
+                    if img_path in img_files:
+                        print(img_path)
+                        try:
+                            if process.extractOne(record[3],[pyt.image_to_string(img_path)], scorer=fuzz.partial_ratio)[1] > THRESHOLD:
+                                re_ocr_success.append(record)
+                                print(pyt.image_to_string(img_path)[1])
+                        except:
+                            pass
+                    else:
+                        print("not in there")
 
 
 
