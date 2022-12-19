@@ -10,7 +10,12 @@ THRESHOLD = 75
 tpg_content = mu.read_file("tpg_content_full.json") + mu.read_file("tpg_content_full2.json")
 passed_records = mu.read_file("passed.csv")
 
-fail_counter = 0
+first_round_passed_counter = 0
+first_round_fail_counter = 0
+second_round_pass_counter = 0
+second_round_fail_counter = 0
+not_in_there = 0
+
 
 passed_first = []
 full_paths = []
@@ -49,25 +54,35 @@ for record in passed_records[1:]:
                 #-checking score, appending
                 if score > THRESHOLD:
                     passed_first.append(record)
+                    first_round_passed_counter += 1
                 elif score < THRESHOLD:
-                    fail_counter += 1
+                    first_round_fail_counter += 1
                     #-write filenames
                     root = record[1]
                     path = f"/n1/obj/{root[0]}/{root[1]}/{root[2]}/{root}/{page.strip('tpg - ')}.tif"
                     full_paths.append(path)
+                    with open("need_filepathes.txt", 'a') as file:
+                        file.write(path + "\n")
                     #-check for filepath, do re-OCR
+                    #note: moa_reocr_images.nosync is, at the moment, stale data, from an earlier, will replace once ready
                     img_files = os.listdir("moa_reocr_images.nosync")
                     img_path = root.lower() + "-" + page.strip("tpg - ")+".tif"
                     if img_path in img_files:
                         print(img_path)
-                        try:
-                            if process.extractOne(record[3],[pyt.image_to_string(img_path)], scorer=fuzz.partial_ratio)[1] > THRESHOLD:
-                                re_ocr_success.append(record)
-                                print(pyt.image_to_string(img_path)[1])
-                        except:
-                            pass
+                        # try:
+                        new_score = process.extractOne(record[3],[pyt.image_to_string("moa_reocr_images.nosync/" + img_path)], scorer=fuzz.partial_ratio)[1]
+                        print("extracted")
+                        if new_score > THRESHOLD:
+                            print("new pass!")
+                            re_ocr_success.append(record)
+                            second_round_pass_counter += 1
+                        elif new_score < THRESHOLD:
+                            second_round_fail_counter += 1
+                        # except:
+                        #     pass
                     else:
                         print("not in there")
+                        not_in_there += 1
 
 
 
@@ -75,7 +90,17 @@ for record in passed_records[1:]:
 #print(fail_counter)
 
 # print("fuzz_test example:", fuzz.partial_ratio("American history,", "\nI LLU STRATED\nWITIH NUMEROUS MAPS AND ENGRAVINGS.\nREVO)iT oiI     THO E c[ ) GLO)N IES.\nN~~~~ )2~or~~~:.\n2l\n~odu; o    &inc\n\n\n\n"))
+print(f'''
+    For Threshold at {THRESHOLD}:
+    ----
+    first round pass = {first_round_passed_counter}
+    first rounf fail = {first_round_fail_counter}
+    ----
+    second round pass = {second_round_pass_counter}
+    second round fail = {second_round_fail_counter}
+    not in there = {not_in_there}
 
+''')
 print("done")
 
 #I'm tweaking away at some of the code here to try to find what the best approach is here, and where perhaps the best Threshold might be.
