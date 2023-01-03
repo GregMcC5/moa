@@ -5,86 +5,97 @@ import pytesseract as pyt
 import os.path
 import os
 
+
 THRESHOLD = 75
 
-tpg_content = mu.read_file("tpg_content_full.json") + mu.read_file("tpg_content_full2.json")
+
+#tpg_content = mu.read_file("tpg_content_full.json") + mu.read_file("tpg_content_full2.json")
+tpg_content = mu.read_file("tpg_content_new_approach_full.json")
 passed_records = mu.read_file("passed.csv")
+
+no_title_page_identified = 0
 
 first_round_passed_counter = 0
 first_round_fail_counter = 0
 second_round_pass_counter = 0
 second_round_fail_counter = 0
 not_in_there = 0
+lost_counter = 0
 
 
 passed_first = []
 full_paths = []
 re_ocr_success = []
+no_title_page = []
 
 tpg_ids = [x["dlps_id"] for x in tpg_content]
 
-#-Round 1 Check
+
+#----Round 1 Check----
 #comparing it with current OCR content
 for record in passed_records[1:]:
     if record[1] in tpg_ids:
-        record_scores = []
         match = [y for y in tpg_content if y["dlps_id"] == record[1]]
         if len(match) == 1:
             match = match[0]
-            #print("match:", match)
         elif len(match) > 1:
             print("\n\nsomething bad happened\n\n")
-            #print(match)
             match = None
         if match:
             if len(match.keys()) > 2:
+                print("okay")
                 selection, score = process.extractOne(query=record[3],choices=[key + "||" + val for key, val in match.items() if "tpg" in key], scorer=fuzz.partial_ratio)
                 page = selection.split("||")[0]
                 ocr = selection.split("||")[1]
                 # #-Doing some testing
-                if record[1] == "ABJ6037.0001.001":
+                if record[1] == "ABK8873.0001.001":
                     print(f'''
                     score: {score}
                     title: {record[3]}
                     page : {page}
                     ocr : {ocr}
                     ''')
-                # # #-appending to a text file
-                # # with open("fuzz_output.txt", 'a') as file:
-                # #     file.write(f"{record[3]}\nfuzz score: {score}, title page index:? {page}\nid: {record[1]}\n\n")
-                # #-checking score, appending
-                # if score > THRESHOLD:
-                #     passed_first.append(record) # to be added to confirmed
-                #     first_round_passed_counter += 1
-                # elif score < THRESHOLD:
-                # #-Round 2 Check
-                #     first_round_fail_counter += 1
-                #     #-write filenames
-                #     root = record[1]
-                #     path = f"/n1/obj/{root[0]}/{root[1]}/{root[2]}/{root}/{page.strip('tpg - ')}.tif"
-                #     full_paths.append(path)
-                #     with open("need_filepathes.txt", 'a') as file:
-                #         file.write(path + "\n")
-                #     #-check for filepath, do re-OCR
-                #     #note: moa_reocr_images.nosync is, at the moment, stale data, from an earlier, will replace once ready
-                #     img_files = os.listdir("moa_reocr_images.nosync")
-                #     img_path = root.lower() + "-" + page.strip("tpg - ")+".tif"
-                #     if img_path in img_files:
-                #         print(img_path)
-                #         # try:
-                #         new_score = process.extractOne(record[3],[pyt.image_to_string("moa_reocr_images.nosync/" + img_path)], scorer=fuzz.partial_ratio)[1]
-                #         print("extracted")
-                #         if new_score > THRESHOLD:
-                #             print("new pass!")
-                #             re_ocr_success.append(record) #to be added to Confrimed
-                #             second_round_pass_counter += 1
-                #         elif new_score < THRESHOLD:
-                #             second_round_fail_counter += 1 #to be manually reviewed
-                #         # except:
-                #         #     pass
-                #     else:
-                #         print("not in there")
-                #         not_in_there += 1
+                # #-appending to a text file
+                with open("fuzz_output.txt", 'a') as file:
+                    file.write(f"{record[3]}\nfuzz score: {score}, title page index:? {page}\nid: {record[1]}\n\n")
+                #-checking score, appending
+                if score > THRESHOLD:
+                    passed_first.append(record) # to be added to confirmed
+                    first_round_passed_counter += 1
+                elif score < THRESHOLD:
+                #----Round 2 Check----
+                    first_round_fail_counter += 1
+                    #-write filenames
+                    root = record[1]
+                    path = f"/n1/obj/{root[0]}/{root[1]}/{root[2]}/{root}/{page.strip('tpg - ')}.tif"
+                    full_paths.append(path)
+                    with open("need_filepathes.txt", 'a') as file:
+                        file.write(path + "\n")
+                    #-check for filepath, do re-OCR
+                    #note: moa_reocr_images.nosync is, at the moment, stale data, from an earlier, will replace once ready
+                    img_files = os.listdir("moa_reocr_images.nosync")
+                    img_path = root.lower() + "-" + page.strip("tpg - ")+".tif"
+                    if img_path in img_files:
+                        print(img_path)
+                        # try:
+                        new_score = process.extractOne(record[3],[pyt.image_to_string("moa_reocr_images.nosync/" + img_path)], scorer=fuzz.partial_ratio)[1]
+                        print("extracted")
+                        if new_score > THRESHOLD:
+                            print("new pass!")
+                            re_ocr_success.append(record) #to be added to Confrimed
+                            second_round_pass_counter += 1
+                        elif new_score < THRESHOLD:
+                            second_round_fail_counter += 1 #to be manually reviewed
+                        # except:
+                        #     pass
+                    else:
+                        print("not in there")
+                        not_in_there += 1
+            elif len(match.keys()) <= 2:
+                no_title_page.append(record) #<---- Sent to no_title_work.ipynb script
+                no_title_page_identified += 1
+    elif record[1] not in tpg_ids:
+        lost_counter += 1
 
 
 
@@ -95,15 +106,24 @@ for record in passed_records[1:]:
 print(f'''
     For Threshold at {THRESHOLD}:
     ----
+    no title page available = {no_title_page_identified}
+    ----
     first round pass = {first_round_passed_counter}
     first rounf fail = {first_round_fail_counter}
     ----
     second round pass = {second_round_pass_counter}
     second round fail = {second_round_fail_counter}
     not in there = {not_in_there}
+    ---
+    Lost! (not in tpg ids) = {lost_counter}
 
 ''')
+mu.write_csv("no_title_page_ids.csv", no_title_page)
+mu.write_csv("fc_passed1.csv", passed_first)
 print("done")
+
+
+
 
 #I'm tweaking away at some of the code here to try to find what the best approach is here, and where perhaps the best Threshold might be.
 
@@ -198,3 +218,9 @@ print("done")
 #   - 29-20 : 1369
 #   - 19-10 : 1002
 #   -  9-0  : 294
+#
+#
+# December 21, 2022:
+# Implemented new version of bs_func.py to extract page OCRs; it lowered the number of items without title pages
+# from 1810 to 384.
+#
