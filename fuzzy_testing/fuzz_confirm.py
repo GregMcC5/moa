@@ -11,7 +11,7 @@ THRESHOLD = 75
 
 #tpg_content = mu.read_file("tpg_content_full.json") + mu.read_file("tpg_content_full2.json")
 tpg_content = mu.read_file("tpg_content_new_approach_full.json")
-passed_records = mu.read_file("passed.csv")
+passed_records = mu.read_file("passed_2.csv")
 
 no_title_page_identified = 0
 
@@ -27,6 +27,8 @@ passed_first = []
 full_paths = []
 re_ocr_success = []
 no_title_page = []
+second_round_fail = []
+second_round_pass = []
 
 tpg_ids = [x["dlps_id"] for x in tpg_content]
 
@@ -43,7 +45,6 @@ for record in passed_records[1:]:
             match = None
         if match:
             if len(match.keys()) > 2:
-                print("okay")
                 selection, score = process.extractOne(query=record[3],choices=[key + "||" + val for key, val in match.items() if "tpg" in key], scorer=fuzz.partial_ratio)
                 page = selection.split("||")[0]
                 ocr = selection.split("||")[1]
@@ -59,7 +60,7 @@ for record in passed_records[1:]:
                 with open("fuzz_output.txt", 'a') as file:
                     file.write(f"{record[3]}\nfuzz score: {score}, title page index:? {page}\nid: {record[1]}\n\n")
                 #-checking score, appending
-                if score > THRESHOLD:
+                if score >= THRESHOLD:
                     passed_first.append(record) # to be added to confirmed
                     first_round_passed_counter += 1
                 elif score < THRESHOLD:
@@ -67,27 +68,28 @@ for record in passed_records[1:]:
                     first_round_fail_counter += 1
                     #-write filenames
                     root = record[1]
-                    path = f"/n1/obj/{root[0]}/{root[1]}/{root[2]}/{root}/{page.strip('tpg - ')}.tif"
+                    path = f"/n1/obj/{root[0].lower()}/{root[1].lower()}/{root[2].lower()}/{root.lower()}/{page.strip('tpg - ').lower()}"
                     full_paths.append(path)
-                    with open("need_filepathes.txt", 'a') as file:
-                        file.write(path + "\n")
+                    # with open("need_filepathes.txt", 'a') as file:
+                    #     file.write(path + "\n")
+
                     #-check for filepath, do re-OCR
-                    #note: moa_reocr_images.nosync is, at the moment, stale data, from an earlier, will replace once ready
-                    img_files = os.listdir("moa_reocr_images.nosync")
-                    img_path = root.lower() + "-" + page.strip("tpg - ")+".tif"
-                    if img_path in img_files:
-                        print(img_path)
-                        # try:
-                        new_score = process.extractOne(record[3],[pyt.image_to_string("moa_reocr_images.nosync/" + img_path)], scorer=fuzz.partial_ratio)[1]
+
+                    img_files = os.listdir("moa_batch_2.nosync")
+                    file_name = path.split("/")[-2:]
+                    file_name = "-".join(file_name)
+                    print(file_name)
+                    if file_name in img_files:
+                        new_score = process.extractOne(record[3],[pyt.image_to_string("moa_batch_2.nosync/" + file_name)], scorer=fuzz.partial_ratio)[1]
                         print("extracted")
                         if new_score > THRESHOLD:
                             print("new pass!")
                             re_ocr_success.append(record) #to be added to Confrimed
                             second_round_pass_counter += 1
+                            second_round_pass.append(record)
                         elif new_score < THRESHOLD:
                             second_round_fail_counter += 1 #to be manually reviewed
-                        # except:
-                        #     pass
+                            second_round_fail.append(record)
                     else:
                         print("not in there")
                         not_in_there += 1
@@ -120,6 +122,8 @@ print(f'''
 ''')
 mu.write_csv("no_title_page_ids.csv", no_title_page)
 mu.write_csv("fc_passed1.csv", passed_first)
+mu.write_csv("fp_second_round_fail.csv", second_round_fail)
+mu.write_csv("fp_second_round_pass.csv", second_round_pass)
 print("done")
 
 

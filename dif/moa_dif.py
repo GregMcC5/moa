@@ -2,6 +2,7 @@ import metadata_utils as mu
 from fuzzywuzzy import fuzz
 import re
 import time
+import ast
 
 start = time.perf_counter()
 
@@ -14,7 +15,7 @@ def fold_records(alma_record, dlxs_record):
 
     folded_record = {key : (alma_record[key] if alma_record[key] not in nones else dlxs_record[key]) for key in alma_record.keys()}
     folded_record["id"] = [alma_record["id"], dlxs_record["id"]]
-
+    print(folded_record)
     return folded_record
 
 #Reading Files
@@ -47,6 +48,8 @@ for key in keys:
     if str(key[2]) in [alma_record["id"] for alma_record in alma] and str(key[0]) in [dlxs_record["id"] for dlxs_record in dlxs]:
         alma_record = [x for x in alma if str(x["id"]) == str(key[2])][0]
         dlxs_record = [x for x in dlxs if str(x["id"]) == str(key[0])][0]
+
+        print(dlxs_record)
 
         #-got both matches, ready for tests/filtering
 
@@ -128,6 +131,19 @@ for entry in investigate:
 
 title_fuzz_file.close
 
+hold = []
+passed_csv_2 = [[val for val in record.values()] for record in passed]
+for item in passed_csv_2:
+    mms = item[0][0]
+    dlxs = item[0][1]
+    item[0] == mms
+    item = [mms, dlxs] + item[1:]
+    print("here's item", item)
+    hold.append(item)
+
+passed_csv_2 = hold
+
+
 #-Writing Files
 
 print("missing dlxs:", len(missing_dlxs), "\nmissing alma:", len(missing_alma))
@@ -136,6 +152,7 @@ mu.write_json("passed.json", passed)
 mu.write_json("investigate2.json", investigate)
 mu.write_csv("passed.csv", passed_csv)
 mu.write_csv("investigate.csv2", investigate_csv)
+mu.write_csv("passed_2.csv", hold)
 
 mu.write_json("missing_alma.json", missing_alma)
 mu.write_json("missing_dlxs.json", missing_dlxs)

@@ -118,8 +118,8 @@ def read_file(filepath):
   return data
 
 
-def string_to_list(string):
-    return json.loads(string)
+# def string_to_list(string):
+#     return json.loads(string)
 
-my_string = "['x','y,']"
-print(string_to_list(my_string))
+# my_string = "['x','y,']"
+# print(string_to_list(my_string))
