@@ -1,0 +1,18 @@
+import metadata_utils as mu
+
+key_test = mu.read_file("id_key_test.csv")
+not_linked = [x[0] for x in key_test if x[2] == ""]
+confirmed = mu.read_file("confirmed.csv")
+mu.write_csv("no_mms.csv", [["mms_id", "dlxs-id", "title", "creator", "pub_date", "publisher", "pub_place","language"]] + [x[:8] for x in confirmed if x[0] == ""])
+mu.write_csv("not_moa.csv", [["mms_id", "dlxs-id", "title", "creator", "pub_date", "publisher", "pub_place","language"]] + [x[:8] for x in confirmed if x[1] in ["AHB9292.0010.001",
+"AFD9937.0001.001",
+"AEK2825.0001.001",
+"ADL8983.0001.001",
+"ABN0405.0001.001",
+"ABA4072.0001.001",
+"ABA8175.0001.001"]
+])
+
+
+mu.write_csv("not_connected.csv", [["dlxs-id", "mms_suggestion", "title", "creator", "pub_date", "publisher", "pub_place","language"]] + [[x[1]] + [x[0]] + x[2:8] for x in confirmed if x[1] in not_linked])
+
