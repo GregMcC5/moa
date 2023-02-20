@@ -26,6 +26,8 @@ The figure below illustrates the same workflow described above. .PY and .IPYNB f
 
 ## Observed Issues
 
+Throughout the course of this project, we encountered a number of issues which were outside the scope of our project or which we did not have the tools available to immediately fix. We have attempted to document these issues wherever possible. Below are 4 issues that arose during the course of our project.
+
 - **Metadata insufficient to describe materials/confusing.** 
 
     Occasionally, the metadata available made assessment of digitized items difficult. This was often the case with serialized works. Occasionally, the titles of serialized volumes changed over time, meaning that earlier works within the same series did not have the same titles as the metadata listed. In these cases, further consultation with ALMA MARC records (specifically 247: Former Title) fields or with external resources to confirm if a digitized item was correctly associated with a series that had since changed titles. This was the case for the “New York Historical Society Collections”, which were held the metadata title of “The John Watts DePeyster Publication Fund series.” Additional research was necessary to confirm that this was indeed the same series.

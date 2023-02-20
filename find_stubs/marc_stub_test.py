@@ -12,7 +12,7 @@ with open("full_moa_export.mrc", 'rb') as data:
         if str(record["001"])[6:] == "990003184960106381":
             print("full", len([thing for thing in record]))
 
-        if len([x for x in record]) < 15:  #<--subject to discussion
+        if len([x for x in record]) < 17:  #<--subject to discussion
             print(record["001"])
             stubs.append([str(record["001"])[6:], len([thing for thing in record])])
         else:
