@@ -1,5 +1,6 @@
 # Making of America Digital Collection Copyright Review Inventory
 Jackson Huang, Curtis Hunt, and Gregory McCollum
+Completed February 2023
 
 ## Objective
 
