@@ -18,11 +18,22 @@ Records that scored highly on these fuzzy tests (above an established threshold)
 
 The remaining records that had not passed at any of these prior steps were manually verified, with corrections being introduced for records not reflecting the digitized texts they are associated with. These verified and corrected records were then added to the confirmed inventory.
 
+Our manual reviews also revealed a number of “bound-with” volumes, in which past librarians had bound together unrelated works into a single volume. These items often failed our fuzzy testing, as a librarian-assigned title, not one from the digitized items, were used in these metadata records. These records were isolated and, where possible, had their work-level metadata extracted to a new csv document.
+
 ## Project Figure
 
 The figure below illustrates the same workflow described above. .PY and .IPYNB files referenced in the figure correspond to scripts files held in the Github repository. Green notes correspond to specific CSV or Google Sheets developed or utilized in this project. 
 
 ![project figure](moa_frame.jpg)
+
+## Outputs
+
+This project had two deliverables:
+
+[Confirmed.csv](https://github.com/GregMcC5/moa/blob/main/confirmed/confirmed.csv) - the completed inventory, with each record having been confirmed to correspond with the digitized item earth by OCR-fuzzy testing or manual review.
+[Pamphlets.csv](https://github.com/GregMcC5/moa/blob/main/confirmed/pamphlets.csv) - the available metadata on the works held within the identified “bound-with” volumes.
+
+These two documents were finalized and delivered to the Library Copyright Office on February 14, 2023.
 
 ## Observed Issues
 
