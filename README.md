@@ -52,7 +52,6 @@ Throughout the course of this project, we encountered a number of issues which w
 
     Additionally, DLXS items were at times linked to incorrect ALMA records, making their metadata incorrect. These items could be linked to wholly incorrect items, or were linked to digital-collection only records in ALMA, not the main catalog item. Users are likely to struggle to find the full digitized items because of this and these DLXS items will be not be updated along with the rest of the catalog.
 
-
 - **Items that shouldn’t be in MOA**
 
     Additionally, several of the items included in the Making of America collection did not appear to be within the digital collection’s topical scope. Specifically, our team felt as though they did not discuss or pertain to the history of the United States, the expressed collecting area of Making of America.
